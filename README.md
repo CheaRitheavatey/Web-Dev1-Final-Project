@@ -4,6 +4,10 @@ It's a digital library website where users can find e-books of various genres,
 read blogs and book reviews, etc.
 
 ## Team Members
-Vatey11 (Chea Ritheavatey) - Browse Page &nbsp;
-bongchanbormey (Bong Chan Bormey) - Home Page &nbsp;
-sopheavatey (Heang Sophea Vatey) - Blog & My Account &nbsp;
+Vatey11 (Chea Ritheavatey) - Browse Page
+
+
+bongchanbormey (Bong Chan Bormey) - Home Page
+
+
+sopheavatey (Heang Sophea Vatey) - Blog & My Account
