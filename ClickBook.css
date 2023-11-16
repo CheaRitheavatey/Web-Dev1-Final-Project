@@ -1,0 +1,90 @@
+.container {
+    line-height: 2;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.panel {
+   
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+
+
+img {
+    margin: 20px;
+
+}
+
+.button {
+    text-align: center;
+    display: flex;
+    max-width: 40% ;
+   position: relative;
+   background-color: lightblue;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight: 400;
+   padding: 10px 30px;
+   margin: 0.5em auto;
+   margin-top: -2px;
+
+
+}
+
+.button:hover {
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.001em;
+    box-shadow: 0 0 7px var(--clr);
+    
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: lightblue;
+}
+
+.button span {
+    position: relative;
+    z-index: 1;
+}
+.leftpanel, .bottompanel {
+
+    /* border: 2px solid gray; */
+    width: 30%;
+    height: 520px;
+    margin: 2%;
+    text-align: center;
+    align-items: center;
+}
+
+.rightpanel {
+    margin-left: auto;
+    margin-right: auto;
+    height: 520px;
+    width: 800px;
+    /* border: 2px solid black; */
+    text-align: center;
+    
+}
+
+    /* box-shadow: 2px; */
+/* .bottompanel {
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}  */
+
+.bottompanel embed {
+    width: 600px;
+    height: 600px;
+}
