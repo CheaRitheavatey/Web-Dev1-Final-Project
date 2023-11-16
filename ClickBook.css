@@ -4,7 +4,6 @@
     text-transform: capitalize;
 }
 .panel {
-   
     text-align: center;
     display: flex;
     align-items: center;
@@ -20,8 +19,8 @@ img {
 
 .button {
     text-align: center;
-    display: flex;
-    max-width: 40% ;
+   display: flex;
+   max-width: 40% ;
    position: relative;
    background-color: lightblue;
    text-decoration: none;
@@ -31,8 +30,6 @@ img {
    padding: 10px 30px;
    margin: 0.5em auto;
    margin-top: -2px;
-
-
 }
 
 .button:hover {
@@ -64,6 +61,27 @@ img {
     align-items: center;
 }
 
+.leftpanel {
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.leftpanel:hover {
+    transform: rotateY(35deg'angle');
+}
+.leftpanel img:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.leftpanel img:after {
+    content: '';
+    position: absolute;
+    transform-origin: left;
+    background: url(images/side-removebg-preview.png);
+    background-position: center;
+    transform: rotateY(35deg'angle');
+}
+
 .rightpanel {
     margin-left: auto;
     margin-right: auto;
@@ -73,17 +91,6 @@ img {
     text-align: center;
     
 }
-
-    /* box-shadow: 2px; */
-/* .bottompanel {
-    border: 2px solid gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-}  */
-
 .bottompanel embed {
     width: 600px;
     height: 600px;
