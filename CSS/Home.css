@@ -1,5 +1,7 @@
+/* Import fonts: Poppins and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 
 body {
     margin: 0;
@@ -8,23 +10,24 @@ body {
 }
   
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: black;
 }
 
 
 /* Navigation Menu */
-.navigation-menu ul { font-family: Libre Baskerville; }
+.navigation-menu ul { font-family: serif; }
 
 nav {
-    background-color: rgb(253, 222, 222);
+    background-color: #4c2fa0;
     height: 80px;
     text-align: center;
     z-index: 1;
     width: 100%;
-    color: black;
+    color: white;
+    box-shadow: 0 2px 4px whitesmoke;
 }
-  
+/* #2d1674 */
+/* #4b2ea2  422890*/
 img {
     margin-top: 10px;
     margin-left: 10px;
@@ -40,7 +43,8 @@ img {
 nav li {
     margin-right: 40px;
     display: inline-block;
-    font-size: 1.1em;
+    font-size: 1.2em;
+
     margin-top: 30px;
 }
 
@@ -51,10 +55,10 @@ nav ul {
   
 nav li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
   
-nav li a:hover { color: white; }
+nav li a:hover { color: #b175ff; }
 
 
 /* Search Box */
@@ -80,7 +84,7 @@ nav li a:hover { color: white; }
 .search-box svg { margin-top: 8px; }
   
 
-/* icon */
+/* Icons */
 .icon {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -88,7 +92,6 @@ nav li a:hover { color: white; }
     margin-right: 10px;
 }
   
-
 .profile-icon, .notification-icon {
     margin-left: 10px;
     margin-top: 22px;
@@ -96,5 +99,62 @@ nav li a:hover { color: white; }
     height: 30px;;
 }
   
-svg:hover { fill: white; }
+svg:hover { fill: #b175ff; }
+
+svg { fill: white; }
+
+.search-icon { fill: #333; }
   
+
+/* Hero Section */
+.hero-section-bookcover { 
+    margin-top: 15%; 
+    margin-left: 30%;
+}
+
+.hero-section-bookcover img { width: 300px; height: 420px; }
+
+section { 
+    display: grid; 
+    grid-template-columns: repeat(2, 2fr);
+    z-index: 2;
+    padding-bottom: 30px;
+}
+
+.hero-section-content { margin-top: 8%; } 
+
+.hero-section-content p { margin-top: 0; }
+
+.hero-section-content h1 { 
+    font-size: 4em;
+    font-weight: bold;
+    font-family: serif;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.author { 
+    color: #b175ff;
+    font-family: Poppins;
+}
+
+.hero-description { 
+    font-family: Poppins;
+    padding-right: 85px;
+    font-size: 1.2em;
+    margin-top: 200px;
+}
+
+.hero-button button {
+    width: 170px;
+    height: 50px;
+    margin: 30px; 
+    font-size: large;
+    margin-left: 0;
+    border: 1px solid #b175ff;
+    color: white;
+    font-family: Raleway;
+    background-color: #b175ff;
+}
+
+.hero-button button:hover { background-color: #4c2fa0; }
