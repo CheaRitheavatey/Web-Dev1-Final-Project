@@ -8,14 +8,10 @@ body {
     padding: 0;
     background-color: white;
 }
-  
-header {
-    color: black;
-}
 
 
 /* Navigation Menu */
-.navigation-menu ul { font-family: serif; }
+.navigation-menu ul { font-family: Raleway; }
 
 nav {
     background-color: #4c2fa0;
@@ -44,7 +40,6 @@ nav li {
     margin-right: 40px;
     display: inline-block;
     font-size: 1.2em;
-
     margin-top: 30px;
 }
 
@@ -114,11 +109,12 @@ svg { fill: white; }
 
 .hero-section-bookcover img { width: 300px; height: 420px; }
 
-section { 
+.hero-section { 
     display: grid; 
     grid-template-columns: repeat(2, 2fr);
     z-index: 2;
-    padding-bottom: 30px;
+    padding-bottom: 65px;
+    padding-top: 25px;
 }
 
 .hero-section-content { margin-top: 8%; } 
@@ -143,6 +139,8 @@ section {
     padding-right: 85px;
     font-size: 1.2em;
     margin-top: 200px;
+    line-height: 1.5;
+    color: #5d5d5d;
 }
 
 .hero-button button {
@@ -158,3 +156,59 @@ section {
 }
 
 .hero-button button:hover { background-color: #4c2fa0; }
+
+
+/* Reader Section */
+.reader-section { 
+    margin: 0 auto;
+    width: 100%; 
+    display: inline-block;
+    background-color: rgb(243, 249, 255);
+    padding-bottom: 50px;
+}
+
+main section h4 { 
+    text-align: center; 
+    color: #333;
+    font-size: 2.3em;
+    font-family: serif;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.reader-reviews {
+    grid-template-columns: repeat(3, 3fr);
+    text-align: left;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20;
+    margin-right: 85px;
+    margin-left: 85px;
+}
+
+.fourth-wing-review {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #5d5d5d;
+}
+
+.reader {
+    font-size: 0.75em;
+    color: #b175ff;
+    margin-top: 0;
+}
+
+.reader-reviews > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.fourth-wing-review, .reader { 
+    font-family: Poppins; 
+    text-align: left;
+}
+
+.first-reader-column, .second-reader-column { margin-right: 85px; }
