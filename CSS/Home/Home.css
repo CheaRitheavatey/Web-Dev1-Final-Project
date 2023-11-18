@@ -164,7 +164,7 @@ svg { fill: white; }
     width: 100%; 
     display: inline-block;
     background-color: rgb(243, 249, 255);
-    padding-bottom: 50px;
+    padding-bottom: 90px;
 }
 
 main section h4 { 
@@ -173,7 +173,7 @@ main section h4 {
     font-size: 2.3em;
     font-family: serif;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 90px;
 }
 
 .reader-reviews {
@@ -182,7 +182,7 @@ main section h4 {
     z-index: 3;
     display: flex;
     justify-content: space-between;
-    margin-top: 20;
+    margin-top: 30;
     margin-right: 85px;
     margin-left: 85px;
 }
@@ -190,7 +190,7 @@ main section h4 {
 .fourth-wing-review {
     font-size: 0.9em;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #5d5d5d;
 }
 
@@ -212,3 +212,62 @@ main section h4 {
 }
 
 .first-reader-column, .second-reader-column { margin-right: 85px; }
+
+
+/* Trending Now Section */
+.trending-now-section {
+    margin-top: 90px;
+    margin-bottom: 65px;
+}
+
+.trending-books {
+    margin-right: 85px;
+    margin-left: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(5, 5fr); */
+    text-align: left;
+
+}
+
+.trending-book { 
+    width: 210px; 
+    height: 310px; 
+}
+
+.trending-books li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.trending-now-section h3 {
+    font-size: 1.6em;
+    font-family: serif;
+    color: #333;
+    margin-left: 85px;
+    margin-bottom: 0;
+}
+
+.book-title, .author-genre {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    margin-left: 8px;
+}
+
+a { text-decoration: none; }
+
+.book-title {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.author-genre {
+    color: #b175ff;
+    font-size: 0.75em;
+}
