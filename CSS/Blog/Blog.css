@@ -1,18 +1,19 @@
+/* Import fonts: Poppins and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
     margin: 0;
     padding: 0;
   }
 header {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: serif;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
   }
 main {
-    
     width: 80%;
     margin: 20px auto;
   }
@@ -44,8 +45,8 @@ main {
     font-weight: bold;
   }
   a{
-    font-family: sans-serif;
+    font-family: Raleway;
   }
-  .content{
+  p {
     font-family: poppins;
   }
