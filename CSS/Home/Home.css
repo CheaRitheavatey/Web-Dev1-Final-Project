@@ -8,10 +8,14 @@ body {
     padding: 0;
     background-color: white;
 }
+  
+header {
+    color: black;
+}
 
 
-/*** Navigation Menu ***/
-.navigation-menu ul { font-family: Raleway; }
+/* Navigation Menu */
+.navigation-menu ul { font-family: serif; }
 
 nav {
     background-color: #4c2fa0;
@@ -20,7 +24,7 @@ nav {
     z-index: 1;
     width: 100%;
     color: white;
-    box-shadow: 0 0px 8px #666;
+    box-shadow: 0 0px 4px #666;
 }
 
 img {
@@ -38,7 +42,8 @@ img {
 nav li {
     margin-right: 40px;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-family: Raleway;
     margin-top: 30px;
 }
 
@@ -55,7 +60,7 @@ nav li a {
 nav li a:hover { color: #b175ff; }
 
 
-/*** Search Box ***/
+/* Search Box */
 .search-box {
     margin-left: 110px;
     background-color: white;
@@ -78,7 +83,7 @@ nav li a:hover { color: #b175ff; }
 .search-box svg { margin-top: 8px; }
   
 
-/*** Icons ***/
+/* Icons */
 .icon {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -375,5 +380,3 @@ a { text-decoration: none; }
     border: 1px solid #b175ff;
     color: white;
 }
-
-/* .subscription-form button:hover { background-color: #4c2fa0; } */
