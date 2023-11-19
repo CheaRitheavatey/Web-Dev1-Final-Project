@@ -7,6 +7,7 @@
 
 /* For the Title of the the blog */
 h1{
+    color:#333;
     font-family: serif;
     font-size: 2.5em;
     margin-top: 50px;
@@ -15,6 +16,7 @@ h1{
     
 }
 h2 {
+    color:#333;
     font-family: serif;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -22,16 +24,19 @@ h2 {
 
 /* For the context */
 blockquote{
+    color:#666;
     margin-left: 16%;
     font-family: Poppins;
 }
 p{
+    background-color: rgb(243,249,255);
+    color:#666;
     font-family: Poppins;
 }
 
 /* for the overall margin */
 main{
-    font-family: Poppins;
+    /* font-family: Poppins; */
     max-width: 900px;
     margin: 0 auto;
     padding: 10px;
