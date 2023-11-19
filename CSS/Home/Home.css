@@ -349,7 +349,6 @@ a { text-decoration: none; }
     color: white;
     font-family: Raleway;
     border: 1px solid #333;
-    
 }
 
 .newsletter-section h2 {
@@ -376,3 +375,5 @@ a { text-decoration: none; }
     border: 1px solid #b175ff;
     color: white;
 }
+
+/* .subscription-form button:hover { background-color: #4c2fa0; } */
