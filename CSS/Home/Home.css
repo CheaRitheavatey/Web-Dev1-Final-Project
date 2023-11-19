@@ -10,7 +10,7 @@ body {
 }
 
 
-/* Navigation Menu */
+/*** Navigation Menu ***/
 .navigation-menu ul { font-family: Raleway; }
 
 nav {
@@ -22,8 +22,7 @@ nav {
     color: white;
     box-shadow: 0 2px 4px whitesmoke;
 }
-/* #2d1674 */
-/* #4b2ea2  422890*/
+
 img {
     margin-top: 10px;
     margin-left: 10px;
@@ -56,7 +55,7 @@ nav li a {
 nav li a:hover { color: #b175ff; }
 
 
-/* Search Box */
+/*** Search Box ***/
 .search-box {
     margin-left: 110px;
     background-color: white;
@@ -79,7 +78,7 @@ nav li a:hover { color: #b175ff; }
 .search-box svg { margin-top: 8px; }
   
 
-/* Icons */
+/*** Icons ***/
 .icon {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -101,7 +100,7 @@ svg { fill: white; }
 .search-icon { fill: #333; }
   
 
-/* Hero Section */
+/*** Hero Section ***/
 .hero-section-bookcover { 
     margin-top: 15%; 
     margin-left: 30%;
@@ -158,7 +157,7 @@ svg { fill: white; }
 .hero-button button:hover { background-color: #4c2fa0; }
 
 
-/* Reader Section */
+/*** Reader Section ***/
 .reader-section { 
     margin: 0 auto;
     width: 100%; 
@@ -214,10 +213,10 @@ main section h4 {
 .first-reader-column, .second-reader-column { margin-right: 85px; }
 
 
-/* Trending Now Section */
+/*** Trending Now Section ***/
 .trending-now-section {
-    margin-top: 60px;
-    margin-bottom: 65px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .trending-books {
@@ -226,7 +225,6 @@ main section h4 {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    /* grid-template-columns: repeat(5, 5fr); */
     text-align: left;
 }
 
@@ -270,3 +268,63 @@ a { text-decoration: none; }
     color: #b175ff;
     font-size: 0.75em;
 }
+
+
+/*** Author Spotlight ***/
+.author-pic { 
+    margin-top: 65px; 
+    margin-left: 85px;
+}
+
+.author-pic img { 
+    width: 550px; 
+    height: 350px; 
+} 
+
+.author-spotlight { 
+    display: grid; 
+    grid-template-columns: repeat(2, 2fr);
+    padding-bottom: 65px;
+    background-color: rgb(243, 249, 255);
+}
+
+.author-spotlight-content h4 { 
+    font-size: 3em;
+    font-weight: bold;
+    font-family: serif;
+    text-align: left;
+    color: #333;
+    margin-bottom: 0;
+    margin-top: 70px;
+}
+
+.author-content { 
+    font-family: Poppins;
+    padding-right: 85px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #5d5d5d;
+    margin-top: 40px;
+}
+
+.author-bio {
+    color: #b175ff;
+    font-size: 0.85em;
+    font-family: Poppins;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.author-button button {
+    width: 170px;
+    height: 50px;
+    margin: 30px; 
+    font-size: large;
+    margin-left: 0;
+    border: 1px solid #b175ff;
+    color: white;
+    font-family: Raleway;
+    background-color: #b175ff;
+}
+
+.author-button button:hover { background-color: #4c2fa0; } 
