@@ -213,13 +213,13 @@ main section h4 {
 .first-reader-column, .second-reader-column { margin-right: 85px; }
 
 
-/*** Trending Now Section ***/
-.trending-now-section {
+/*** Trending Now, Fantasy, Non-fiction Sections ***/
+.book-section {
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.trending-books {
+.books {
     margin-right: 85px;
     margin-left: 40px;
     justify-content: space-between;
@@ -228,22 +228,22 @@ main section h4 {
     text-align: left;
 }
 
-.trending-book { 
+.book { 
     width: 210px; 
     height: 310px; 
     transition: 0.3s;
 }
 
-.trending-book:hover { scale: 1.075; }
+.book:hover { scale: 1.075; }
 
-.trending-books li {
+.books li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 0;
 }
 
-.trending-now-section h3 {
+.book-section h3 {
     font-size: 1.7em;
     font-family: serif;
     color: #333;
@@ -280,7 +280,7 @@ a { text-decoration: none; }
 }
 
 .author-pic img { 
-    width: 550px; 
+    width: 540px; 
     height: 350px; 
 } 
 
@@ -324,8 +324,8 @@ a { text-decoration: none; }
     margin: 30px; 
     font-size: large;
     margin-left: 0;
-    border: 1px solid #b175ff;
     color: white;
+    border: 1px solid #b175ff;
     font-family: Raleway;
     background-color: #b175ff;
 }
@@ -333,121 +333,46 @@ a { text-decoration: none; }
 .author-button button:hover { background-color: #4c2fa0; } 
 
 
-/*** Fantasy Books Section ***/
-.fantasy-book-section {
-    margin-top: 80px;
+/*** Newsletter Section ***/
+.newsletter-section {
+    text-align: center;
     margin-bottom: 80px;
-}
-
-.fantasy-books {
-    margin-right: 85px;
-    margin-left: 40px;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.fantasy-book { 
-    width: 210px; 
-    height: 310px; 
-    transition: 0.3s;
-}
-
-.fantasy-book:hover { scale: 1.075; }
-
-.fantasy-books li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0;
-}
-
-.fantasy-book-section h3 {
-    font-size: 1.7em;
-    font-family: serif;
-    color: #333;
-    margin-left: 85px;
-    margin-bottom: 0;
-}
-
-.book-title, .author-genre {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    font-family: Poppins;
-    margin-left: 8px;
-}
-
-a { text-decoration: none; }
-
-.book-title {
-    color: #666;
-    font-size: 0.9em;
-    margin-top: 10px;
-}
-
-.author-genre {
-    color: #b175ff;
-    font-size: 0.75em;
-}
-
-
-/*** Non-fiction Books Section */
-.nonfiction-book-section {
     margin-top: 80px;
-    margin-bottom: 80px;
 }
 
-.nonfiction-books {
-    margin-right: 85px;
-    margin-left: 40px;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
+#email-input {
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 5px;
+    font-size: medium;
+    color: white;
+    font-family: Raleway;
+    border: 1px solid #333;
+    
 }
 
-.nonfiction-book { 
-    width: 210px; 
-    height: 310px; 
-    transition: 0.3s;
-}
-
-.nonfiction-book:hover { scale: 1.075; }
-
-.nonfiction-books li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0;
-}
-
-.nonfiction-book-section h3 {
-    font-size: 1.7em;
-    font-family: serif;
-    color: #333;
-    margin-left: 85px;
+.newsletter-section h2 {
+    font-size: 2.5em;
+    margin-top: 60px;
     margin-bottom: 0;
+    color: #333;
 }
 
-.book-title, .author-genre {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    font-family: Poppins;
-    margin-left: 8px;
-}
-
-a { text-decoration: none; }
-
-.book-title {
-    color: #666;
+.newsletter-section p {
+    margin-top: 12px;
     font-size: 0.9em;
-    margin-top: 10px;
+    font-family: Poppins;
+    color: #666;
 }
 
-.author-genre {
-    color: #b175ff;
-    font-size: 0.75em;
+.subscription-form button {
+    width: 130px;
+    height: 45px;
+    font-size: medium;
+    background-color: #b175ff;
+    font-family: Raleway;
+    margin-top: 30px;
+    border: 1px solid #b175ff;
+    color: white;
 }
