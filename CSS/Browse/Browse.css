@@ -10,9 +10,13 @@
 }
 
 body {
-    background: #dfe9f5;
+    background: #fff;
+    color: #222;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
     display: flex;
 }
+
 
 nav {
     float: left;
@@ -75,6 +79,7 @@ nav:hover {
 main {
     float: right;
     margin-left: 290px;
+
 }
 main .image {
     height: 190px;
