@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Account Information */
+.account-info{
+    /* background-color: rgb(243,249,255); */
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 60px;
+    flex: 0.25;
+    padding: 10px;
+    /* background-clip: content-box; */
+}
+
+.profile{
+    position:relative;
+    display:inline-block;
+}
+
+.profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile span{
+    color:#666;
+    font-family: Poppins;
+    font-size: 1em;
+    position: absolute;
+    top: 30%;
+    margin-right:50%;
+    width:150px;
+    /* transform: translate(-50%, -50%); */
+}
+
+.user-info li{
+    
+    color: #666;
+    font-family: Poppins;
+    font-size: 1em;
+    list-style-type: none;
+    margin-left: -10%;
+    line-height: 3;
+}
+
+.edit-button button{
+    width: 170px;
+    height: 50px;
+    margin: 30px; 
+    font-size: large;
+    margin-left: 0;
+    border: 1px solid #b175ff;
+    color: white;
+    font-family: Raleway;
+    background-color: #b175ff;
+}
+.edit-button button:hover { background-color: #4c2fa0; }
+
+
+
+/* reading list */
+.reading-list {
+    flex:1;
+    padding:20px;
+    margin-top: 60px;
+    margin-bottom: 65px;
+}
+
+.continue-reading, .wish-to-read, .finished-reading {
+    margin-right: 85px;
+    margin-left: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.book-img { 
+    width: 200px; 
+    height: 285px; 
+}
+
+.continue-reading li, .wish-to-read li, .finished-reading li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.reading-list h3 {
+    font-size: 1.6em;
+    font-family: serif;
+    color: #333;
+    margin-left: 85px;
+    margin-bottom: 0;
+}
+
+.book-title, .author-genre {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    margin-left: 8px;
+}
+
+a { text-decoration: none; }
+
+.book-title {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.author-genre {
+    color: #b175ff;
+    font-size: 0.75em;
+}
