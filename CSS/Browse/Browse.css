@@ -10,9 +10,13 @@
 }
 
 body {
-    background: #dfe9f5;
+    background: #fff;
+    color: #222;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
     display: flex;
 }
+
 
 nav {
     float: left;
@@ -75,6 +79,7 @@ nav:hover {
 main {
     float: right;
     margin-left: 290px;
+
 }
 main .image {
     height: 190px;
@@ -174,32 +179,76 @@ main .image {
   .cover:hover {
     height: 220px;
   }
-  
-  /**********************************
-  display change
-  ***********************************/
-  /*book height smaller, cover opacity, move text onto cover and star too
-  animate it */
-  /* #list-th:target .book {
-    height: 100px;
-    width: 250px;
-    padding: 10px;
-    margin: 25px auto 25px auto;
-  }
-  
-  #list-th:target .cover {
-    width: 246px;
-  }
-  
-  #list-th:target img {
-    opacity: .1;
-  }
-  
-  #list-th:target p {
-    margin-top: -62px;
-    margin-left: 20px;
-  }
-  /* remove button? */
-/* #large-th:target .book {
-    height: 390px;
-  } */
+  .trending-now-section {
+    margin-top: 90px;
+    margin-bottom: 65px;
+}
+
+.trending-books {
+    margin-right: 85px;
+    margin-left: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(5, 5fr); */
+    text-align: left;
+
+}
+
+.trending-book { 
+    width: 210px; 
+    height: 310px; 
+}
+
+.trending-books li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.trending-now-section h3 {
+    font-size: 1.6em;
+    font-family: serif;
+    color: #333;
+    margin-left: 85px;
+    margin-bottom: 0;
+}
+
+.book-title, .author-genre {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    margin-left: 8px;
+}
+
+a { text-decoration: none; }
+
+.book-title {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.author-genre {
+    color: #b175ff;
+    font-size: 0.75em;
+}
+
+/* book hover animation */
+/*     <div class="container">
+        <div class="box-inner">
+            <div class="book books-1 book-blur"></div>
+            <div class="book books-2 book-blur"></div>
+            <div class="book books-3 book-blur"></div>
+        </div>
+        <div class="box-out">
+            <div class="book books-1"></div>
+            <div class="book books-2"></div>
+            <div class="book books-3"></div>
+        </div>
+    </div>
+
+<a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr" src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png" alt=""></a>
+ */
