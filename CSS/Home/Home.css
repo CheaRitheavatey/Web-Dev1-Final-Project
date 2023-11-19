@@ -20,7 +20,7 @@ nav {
     z-index: 1;
     width: 100%;
     color: white;
-    box-shadow: 0 2px 4px whitesmoke;
+    box-shadow: 0 0px 8px #666;
 }
 
 img {
@@ -364,6 +364,66 @@ a { text-decoration: none; }
 }
 
 .fantasy-book-section h3 {
+    font-size: 1.7em;
+    font-family: serif;
+    color: #333;
+    margin-left: 85px;
+    margin-bottom: 0;
+}
+
+.book-title, .author-genre {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    margin-left: 8px;
+}
+
+a { text-decoration: none; }
+
+.book-title {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.author-genre {
+    color: #b175ff;
+    font-size: 0.75em;
+}
+
+
+/*** Non-fiction Books Section */
+.nonfiction-book-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.nonfiction-books {
+    margin-right: 85px;
+    margin-left: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.nonfiction-book { 
+    width: 210px; 
+    height: 310px; 
+    transition: 0.3s;
+}
+
+.nonfiction-book:hover { scale: 1.075; }
+
+.nonfiction-books li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.nonfiction-book-section h3 {
     font-size: 1.7em;
     font-family: serif;
     color: #333;
