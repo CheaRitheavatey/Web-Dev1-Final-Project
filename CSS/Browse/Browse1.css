@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* for body part */
+body {
+    background: #fff;
+    color: #222;
+    font-size: 18px;
+    display: flex;
+}
+
+/* for navigation part */
+nav {
+    float: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0,0.1);
+}
+
+
+/* for logo */
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+/* for image of logo */
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* logo span */
+.logo span {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* for anchor of navigation */
+a {
+    position: relative;
+    color: rgb(85,83,83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+/* navigation item such as fiction, non-fiction etc... */
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+/* when hover it expands */
+nav:hover {
+    width: 250px;
+    transition: all 0.5s ease;
+}
+
+/* for main part */
+main {
+  float: right;
+  margin-left: 85px;
+  
+
+}
+  .fa {
+    margin-right: 20px;
+    font-size: 30px;
+    color: gray;
+    float: right;
+  }
+
+  /******************************************
+  Book stuff
+  *******************************************/
+  /* reading list */
+.reading-list {
+    flex:1;
+    padding:20px;
+    margin-top: 60px;
+    margin-bottom: 65px;
+}
+
+.continue-reading, .wish-to-read, .finished-reading {
+    margin-right: 85px;
+    margin-left: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.book-img { 
+    width: 200px; 
+    height: 285px; 
+}
+
+.continue-reading li, .wish-to-read li, .finished-reading li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.reading-list h3 {
+    font-size: 1.6em;
+    font-family: serif;
+    color: #333;
+    margin-left: 85px;
+    margin-bottom: 0;
+}
+
+.book-title, .author-genre {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    margin-left: 8px;
+}
+
+a { text-decoration: none; }
+
+.book-title {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.author-genre {
+    color: #b175ff;
+    font-size: 0.75em;
+}
