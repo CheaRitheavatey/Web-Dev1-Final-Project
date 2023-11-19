@@ -216,7 +216,7 @@ main section h4 {
 
 /* Trending Now Section */
 .trending-now-section {
-    margin-top: 90px;
+    margin-top: 60px;
     margin-bottom: 65px;
 }
 
@@ -228,7 +228,6 @@ main section h4 {
     flex-wrap: wrap;
     /* grid-template-columns: repeat(5, 5fr); */
     text-align: left;
-
 }
 
 .trending-book { 
