@@ -3,9 +3,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  margin-top: 0;
+}
 
-  
+
+
+/* ------------------------------------- */
+      /* Navigation Menu */
+/* ------------------------------------- */
+.navigation-menu ul { font-family: serif; }
+
+nav {
+  background-color: #4c2fa0;
+  height: 80px;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  color: white;
+  box-shadow: 0 0px 4px #666;
+}
+
+.logo {
+  margin-right: 230px;
+  margin-top: 15px;
+  color: white;
+  font-family: Playfair Display;
+  font-size: 2em;
+}
+
+.navigation-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  position: fixed;
+  margin-top: 0;
+}
+
+nav li {
+  margin-right: 20px;
+  display: inline-block;
+  font-size: 1.1em;
+  font-family: Raleway;
+  margin-top: 30px;
+}
+
+nav ul {
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover { color: #b175ff; }
+
+
+
+/* ------------------------------------- */
+          /* Search Box */
+/* ------------------------------------- */
+.search-box {
+  margin-left: 110px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  width: 250px;
+  height: 35px;
+  border-radius: 10rem;
+  border-color: black;
+  margin-top: 20px;
+}
+
+.search-box input {
+  margin-left: 15px;
+  border: none;
+  outline: none;
+  width: 12rem;
+}
+
+.search-box svg { margin-top: 8px; }
+
+
+
+/* ------------------------------------- */
+              /* Icons */
+/* ------------------------------------- */
+.icon {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  text-align: left;
+  margin-right: 10px;
+}
+
+.profile-icon, .notification-icon {
+  margin-left: 10px;
+  margin-top: 22px;
+  width:30px;
+  height: 30px;;
+}
+
+svg:hover { fill: #b175ff; }
+
+svg { fill: white; }
+
+.search-icon { fill: #333; }
+
+/* header part */
+
+.header h1{
+  font-family: serif;
+  font-size: 3em;
+  color:#333;
+  margin-top: 8%;
+}
+
+.header p{
+  font-family: Poppins;
+  font-size: 1em;
+  color:#666
+}
+
+.middle {
+  margin-right: 85px;
+  margin-left: 85px;
+}
+
+/* laying out the box in the blogpost */
+
+.blog-post{
+  display: flex;
+  margin-top: 35px;
+  /* border-style: dashed; */
+}
+
+.blog-image{
+  margin-right: 20px;
+}
+
+
+.blog-info{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  flex:5;
+  /* border-style: dotted; */
+}
+
+.author-profile{
+  height: 20%;
+  /* border-style: double; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.name-date {
+  font-family: Poppins;
+  color:#666;
+  line-height: 1.5;
+  margin-left: 25px;
+  /* display: inline-block;
+  white-space: pre-line; */
+}
+
+.blog-content h2{
+  font-family: serif;
+  font-size: 1.5em;
+  color:#333;
+}
+
+.blog-content p{
+  font-family: Poppins;
+  color: #666;
+}
+
+/* Image size */
+.author-profile img{
+  height: 50px;
+  width: 50px;
+}
+
+.blog-image img{
+  height: 200px;
+  width: 300px;
+}
+
