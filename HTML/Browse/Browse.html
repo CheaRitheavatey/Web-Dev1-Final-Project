@@ -1,346 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse page</title>
-    <link rel="stylesheet" href="/CSS/Browse/Browse.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse</title>
+  <!-- Link your existing stylesheet -->
+  <link rel="stylesheet" href="/CSS/Browse/newNav.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 <body>
 
-  <!-- start navigation -->
-
-  <div class="wrapper">
-    <nav>
-      <ul>
-        <!-- logo part -->
-        <li>
-          <a href="#"><img src="/IMAGES/Logo.png" alt=""></a>
-        </li>
-
-        <!-- Fiction part -->
-        <li>
-          <a href="#">
-            <i class="fas"></i>
-            <span class="nav-item">Fiction</span>
-          </a>
-        </li>
-
-        <!-- Non-Fiction part -->
-        <li>
-          <a href="#">
-            <i class="fas"></i>
-            <span class="nav-item">Non-Fiction</span>
-          </a>
-        </li>
-
-        <!-- Thriller part -->
-        <li>
-          <a href="#">
-            <i class="fas"></i>
-            <span class="nav-item">Thriller</span>
-          </a>
-        </li>
-
-        <!-- Anime part -->
-        <li>
-          <a href="#">
-            <i class="fas"></i>
-            <span class="nav-item">Anime</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <!-- header start -->
+    <header>
+        <nav class="navigation-menu">
+            <img src="/IMAGES/Logo.png" alt="Website Logo">
+            <ul class="nav-items">
+                <li><a href="/HTML/Home/">Home</a></li>
+                <!-- <li><a href="Browse.html">Browse</a></li> -->
+                <li><div class="dropdown">
+                  <a href="/HTML/Browse/Browse.html">Browse</a>
+                  <div class="dropdown-content">
+                    <a href="#">Fantasy</a>
+                    <a href="#">Non-fiction</a>
+                    <a href="#">Thriller</a>
+                    <a href="#">Manga</a>
+                  </div>
+                </div>
+                </li>
+                <li><a href="/HTML/Blog/Blog.html">Blog</a></li>
+                <li><a href="/HTML/MyBooks/MyBooks.html">My Account</a></li>
+            </ul>
+      
+            <div class="icon">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </div>
+      
+                <div class="profile-bell-icons">
+                    <svg class="profile-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+      
+                    <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
 
 <!-- main section start -->
-  <main>
-    <!-- heading -->
-    <h1> A List of Books</h1> <br>
 
+    <!-- fantasy section start -->
+    <section class="reading-list1">
+        <h3>Fantasy</h3>
+        <div class="swiper">
+            <div>
+                <!-- Add book cover images in each slide 5 books-->
+                <div>
+                    <ul class="wish-to-read">
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/Godkiller-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Godkiller</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-  <!-- section for fantasy-->
+                
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/Antimatter-Blues-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Antimatter Blues</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-  <div class="main-content">
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/Iron-Flame-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-    <!-- heading for fantasy -->
-    <h3>Fantasy</h3>
-    <!-- book 1 start -->
-    <div class="wrappers">
-      <div class="book">
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/The-Deep-Sky-BookCover.jpg" alt="Iron Flame book cover">
+                            <p class="book-title">The Deep Sky</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-        <!-- image of book cover div start-->
-        <div class="book-cover" style="background-image: url(/images/Fantasy/Godkiller-BookCover.jpeg);">
-          <div class="book-detail">Poverty, by America</div>
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/The-Water-Outlaws-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">The Deep Sky</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
         </div>
-        <!-- end of book cover div -->
+    </section>    
+    <!-- fantasy section end -->
 
-        <!-- start of book page -->
-        <div class="book-page"></div>
-        <!-- end of book page -->
-      </div>
-      <!-- title or name start -->
-      <h4>by Hannah Kaner | Fantasy</h4>
-      <!-- title or name end -->
-    </div>
-    <!-- book 1 end -->
+    <!-- non-fiction section start -->
+    <section class="reading-list">
+        <h3>Non-fiction</h3>
+        <div>
+            <div>
+                <!-- Add book cover images in each slide -->
+                <div>
+                    <ul class="wish-to-read">
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/Atomic-Habits-BookCover.jpg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-    <!-- book 2 start -->
-    <div class="wrappers">
-      <div class="book">
+                
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/I-Can't-Save-You-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-        <!-- image of book cover div start-->
-        <div class="book-cover" style="background-image: url(/images/Fantasy/Iron-Flame-BookCover.jpeg);">
-          <div class="book-detail">Poverty, by America</div>
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/Origin-of-Time-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/Poverty-by-America-BookCover.png" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/Hello-Beautiful-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
         </div>
-        <!-- end of book cover div -->
+    </section>  
+    <!-- non-fiction section end -->
 
-        <!-- start of book page -->
-        <div class="book-page"></div>
-        <!-- end of book page -->
-      </div>
-      <!-- title or name start -->
-      <h4>by Hannah Kaner | Fantasy</h4>
-      <!-- title or name end -->
-    </div>
-    <!-- book 2 end -->
 
-    <!-- book 3 start -->
-    <div class="wrappers">
-      <div class="book">
+    <!-- thriller section start -->
+    <section class="reading-list">
+        <h3>Thriller</h3>
+        <div>
+            <div>
+                <!-- Add book cover images in each slide -->
+                <div>
+                    <ul class="wish-to-read">
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/Good-Bad-Girl-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-        <!-- image of book cover div start-->
-        <div class="book-cover" style="background-image: url(/images/Fantasy/Antimatter-Blues-BookCover.jpeg);">
-          <div class="book-detail">Poverty, by America</div>
+                
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/The-New-Mother-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/The-Spare-Room-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/The-Trap-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/Their-Vicious-Games-BookCover.jpeg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
         </div>
-        <!-- end of book cover div -->
+    </section>
+    <!-- thriller section end -->
 
-        <!-- start of book page -->
-        <div class="book-page"></div>
-        <!-- end of book page -->
-      </div>
-      <!-- title or name start -->
-      <h4>Poverty, by America</h4>
-      <!-- title or name end -->
-    </div>
-    <!-- book 3 end -->
+    <!-- Manga section start -->
+    <section class="reading-list">
+        <h3>Manga</h3>
+        <div>
+            <div>
+                <!-- Add book cover images in each slide -->
+                <div>
+                    <ul class="wish-to-read">
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu1_.jpg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-    <!-- book 4 start -->
-    <div class="wrappers">
-      <div class="book">
+                
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu2.jpg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
 
-        <!-- image of book cover div start-->
-        <div class="book-cover" style="background-image: url(/images/Fantasy/The-Deep-Sky-BookCover.jpg);">
-          <div class="book-detail">Poverty, by America</div>
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu3.jpg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu4.jpg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+
+                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu5.jpg" alt="Iron Flame book cover">
+                            <p class="book-title">Iron Flame</p>
+                            <p class="author-genre">by Rebecca Yarros</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <!-- end of book cover div -->
-
-        <!-- start of book page -->
-        <div class="book-page"></div>
-        <!-- end of book page -->
-      </div>
-      <!-- title or name start -->
-      <h4>by Hannah Kaner | Fantasy</h4>
-      <!-- title or name end -->
-    </div>
-    <!-- book 4 end -->
-  </div>
-  <!-- end for fantasy  -->
-
-
- <!-- ******************************************* -->
-
-  <!-- section for Non-Fiction-->
-
-  <div class="main-content">
-
-     <!-- heading for Non-fiction -->
-     <h3>Non-Fiction</h3>
-
-    <!-- book 1 start -->
-  <div class="wrappers">
-    <div class="book">
-
-      <!-- image of book cover div start-->
-      <div class="book-cover" style="background-image: url(/images/Nonfiction/Hello-Beautiful-BookCover.jpeg);">
-        <div class="book-detail">Poverty, by America</div>
-      </div>
-      <!-- end of book cover div -->
-
-      <!-- start of book page -->
-      <div class="book-page"></div>
-      <!-- end of book page -->
-    </div>
-    <!-- title or name start -->
-    <h4>by Hannah Kaner | Fantasy</h4>
-    <!-- title or name end -->
-  </div>
-  <!-- book 1 end -->
-
-  <!-- book 2 start -->
-  <div class="wrappers">
-    <div class="book">
-
-      <!-- image of book cover div start-->
-      <div class="book-cover" style="background-image: url(/images/Nonfiction/I-Can\'t-Save-You-BookCover.jpeg);">
-        <div class="book-detail">Poverty, by America</div>
-      </div>
-      <!-- end of book cover div -->
-
-      <!-- start of book page -->
-      <div class="book-page"></div>
-      <!-- end of book page -->
-    </div>
-    <!-- title or name start -->
-    <h4>by Hannah Kaner | Fantasy</h4>
-    <!-- title or name end -->
-  </div>
-  <!-- book 2 end -->
-
-  <!-- book 3 start -->
-  <div class="wrappers">
-    <div class="book">
-
-      <!-- image of book cover div start-->
-      <div class="book-cover" style="background-image: url(/images/Nonfiction/Poverty-by-America-BookCover.png);">
-        <div class="book-detail">Poverty, by America</div>
-      </div>
-      <!-- end of book cover div -->
-
-      <!-- start of book page -->
-      <div class="book-page"></div>
-      <!-- end of book page -->
-    </div>
-    <!-- title or name start -->
-    <h4>by Hannah Kaner | Fantasy</h4>
-    <!-- title or name end -->
-  </div>
-  <!-- book 3 end -->
-
-   <!-- book 4 start -->
-   <div class="wrappers">
-    <div class="book">
-
-      <!-- image of book cover div start-->
-      <div class="book-cover" style="background-image: url(/images/Fantasy/Godkiller-BookCover.jpeg);">
-        <div class="book-detail">Poverty, by America</div>
-      </div>
-      <!-- end of book cover div -->
-
-      <!-- start of book page -->
-      <div class="book-page"></div>
-      <!-- end of book page -->
-    </div>
-    <!-- title or name start -->
-    <h4>by Hannah Kaner | Fantasy</h4>
-    <!-- title or name end -->
-  </div>
-  <!-- book 4 end -->
-  </div>
-
-  
-  <!-- end for non-fiction -->
-
-<!-- ******************************************* -->
-
-
-  <!-- section for Non- Fiction-->
-
-  <div class="main-content">
-
-     <!-- heading for Thriller -->
-     <h3>Thriller</h3>
-
-    <!-- book 1 start -->
-  <div class="wrappers">
-    <div class="book">
-
-      <!-- image of book cover div start-->
-      <div class="book-cover" style="background-image: url(/images/Thriller/The-Spare-Room-BookCover.jpeg);">
-        <div class="book-detail">Poverty, by America</div>
-      </div>
-      <!-- end of book cover div -->
-
-      <!-- start of book page -->
-      <div class="book-page"></div>
-      <!-- end of book page -->
-    </div>
-    <!-- title or name start -->
-    <h4>by Hannah Kaner | Fantasy</h4>
-    <!-- title or name end -->
-  </div>
-  <!-- book 1 end -->
-
-  <!-- book 2 start -->
-  <div class="wrappers">
-    <div class="book">
-
-      <!-- image of book cover div start-->
-      <div class="book-cover" style="background-image: url(/images/Thriller/The-New-Mother-BookCover.jpeg);">
-        <div class="book-detail">Poverty, by America</div>
-        <div class="author-genre"></div>
-      </div>
-      <!-- end of book cover div -->
-
-      <!-- start of book page -->
-      <div class="book-page"></div>
-      <!-- end of book page -->
-    </div>
-    <!-- title or name start -->
-    <h4>by Hannah Kaner | Fantasy</h4>
-    <!-- title or name end -->
-  </div>
-  <!-- book 2 end -->
-
-  <!-- book 3 start -->
-  <div class="wrappers">
-    <div class="book">
-
-      <!-- image of book cover div start-->
-      <div class="book-cover" style="background-image: url(/images/Thriller/Good-Bad-Girl-BookCover.jpeg);">
-        <div class="book-detail">Poverty, by America</div>
-      </div>
-      <!-- end of book cover div -->
-
-      <!-- start of book page -->
-      <div class="book-page"></div>
-      <!-- end of book page -->
-    </div>
-    <!-- title or name start -->
-    <h4>by Hannah Kaner | Fantasy</h4>
-    <!-- title or name end -->
-  </div>
-  <!-- book 3 end -->
-
-  <!-- book 4 start -->
-  <div class="wrappers">
-  <div class="book">
-
-    <!-- image of book cover div start-->
-    <div class="book-cover" style="background-image: url(/images/Fantasy/Godkiller-BookCover.jpeg);">
-      <div class="book-detail">Poverty, by America</div>
-    </div>
-    <!-- end of book cover div -->
-
-    <!-- start of book page -->
-    <div class="book-page"></div>
-    <!-- end of book page -->
-  </div>
-  <!-- title or name start -->
-  <h4>by Hannah Kaner | Fantasy</h4>
-  <!-- title or name end -->
-  </div>
-  <!-- book 4 end -->
-</div>
-  
-  <!-- end for thriller -->
-
-<!-- ******************************************* -->
+    </section>
+    <!-- Manga section end -->
  
+<!-- main section end -->
 
-  </main>
+    <!-- Footer Section start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">About The Rkhive</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
 
-    
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/HTML/Home/Home.html">Home</a></li>
+                        <li><a href="/HTML/Browse/Browse.html">Browse</a></li>
+                        <li><a href="/HTML/Blog/Blog.html">Blog</a></li>
+                        <li><a href="/HTML/MyBooks/MyBooks.html">My Books</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; The Rkhive 2023. All Rights Reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   </footer>    
+   <!-- footer section end -->
 </body>
 </html>
 
