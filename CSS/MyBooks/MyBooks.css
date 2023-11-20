@@ -4,56 +4,150 @@
 body {
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
+
+.navigation-menu ul { font-family: serif; }
+
+nav {
+    background-color: #4c2fa0;
+    height: 80px;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    box-shadow: 0 0px 4px #666;
+}
+
+img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+  
+.navigation-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    position: fixed;
+    margin-top: 0;
+}
+  
+nav li {
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: Raleway;
+    margin-top: 30px;
+}
+
+nav ul {
+    white-space: nowrap;
+    margin: 0 auto;
+}
+  
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+  
+nav li a:hover { color: #b175ff; }
+
+
+/* Search Box */
+.search-box {
+    margin-left: 110px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 250px;
+    height: 35px;
+    border-radius: 10rem;
+    border-color: black;
+    margin-top: 20px;
+}
+  
+.search-box input {
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    width: 12rem;
+}
+  
+.search-box svg { margin-top: 8px; }
+  
+
+/* Icons */
+.icon {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    text-align: left;
+    margin-right: 10px;
+}
+  
+.profile-icon, .notification-icon {
+    margin-left: 10px;
+    margin-top: 22px;
+    width:30px;
+    height: 30px;;
+}
+  
+svg:hover { fill: #b175ff; }
+
+svg { fill: white; }
+
+.search-icon { fill: #333; }
 
 /* Account Information */
 .account-info{
-    /* background-color: rgb(243,249,255); */
-    margin-right: 10px;
-    margin-left: 20px;
-    margin-top: 60px;
+    margin-right: 0;
+    margin-left: 85px;
+    margin-top: 8%;
     flex: 0.25;
-    padding: 10px;
-    /* background-clip: content-box; */
 }
 
+
 .profile{
+    
     position:relative;
     display:inline-block;
+    margin-bottom: 30px;
 }
 
 .profile img{
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    
 }
 
 .profile span{
-    color:#666;
-    font-family: Poppins;
-    font-size: 1em;
+    color:#333;
+    font-family: serif;
+    font-size: 1.5em;
     position: absolute;
     top: 30%;
     margin-right:50%;
     width:150px;
-    /* transform: translate(-50%, -50%); */
+    font-weight: bold;
 }
 
 .user-info li{
-    
+
     color: #666;
     font-family: Poppins;
     font-size: 1em;
     list-style-type: none;
-    margin-left: -10%;
-    line-height: 3;
+    margin-left: -45px;
+    line-height: 2;
 }
 
+.user-info{
+    margin-top: 20px;
+}
 .edit-button button{
     width: 170px;
-    height: 50px;
+    height: 45px;
     margin: 30px; 
-    font-size: large;
+    font-size: medium;
     margin-left: 0;
     border: 1px solid #b175ff;
     color: white;
@@ -66,24 +160,25 @@ body {
 
 /* reading list */
 .reading-list {
-    flex:1;
-    padding:20px;
-    margin-top: 60px;
+    flex:1; 
+    margin-top: 8%;
     margin-bottom: 65px;
+    margin-right:85px;
 }
 
 .continue-reading, .wish-to-read, .finished-reading {
-    margin-right: 85px;
-    margin-left: 40px;
+    margin-left: 0px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+    margin-bottom: 50px;
 }
 
 .book-img { 
-    width: 200px; 
-    height: 285px; 
+    width: 185px; 
+    height: 270px; 
+    margin-top: 0;
 }
 
 .continue-reading li, .wish-to-read li, .finished-reading li {
@@ -94,11 +189,12 @@ body {
 }
 
 .reading-list h3 {
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-family: serif;
     color: #333;
-    margin-left: 85px;
+    /* margin-left: 85px; */
     margin-bottom: 0;
+    margin-left:37px;
 }
 
 .book-title, .author-genre {
@@ -114,7 +210,6 @@ a { text-decoration: none; }
 .book-title {
     color: #666;
     font-size: 0.9em;
-    margin-top: 10px;
 }
 
 .author-genre {
