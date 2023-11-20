@@ -1,3 +1,106 @@
+/* Import fonts: Poppins and Raleway  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+/*** Navigation Menu ***/
+.navigation-menu ul { font-family: Raleway; }
+
+nav {
+    top: 0;
+    background-color: #4c2fa0;
+    height: 80px;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    box-shadow: 0 0px 8px #666;
+}
+
+img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+  
+.navigation-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    position: fixed;
+    margin-top: 0;
+}
+  
+nav li {
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+nav ul {
+    white-space: nowrap;
+    margin: 0 auto;
+}
+  
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+  
+nav li a:hover { color: #b175ff; }
+
+
+/*** Search Box ***/
+.search-box {
+    margin-left: 110px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 250px;
+    height: 35px;
+    border-radius: 10rem;
+    border-color: black;
+    margin-top: 20px;
+}
+  
+.search-box input {
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    width: 12rem;
+}
+  
+.search-box svg { margin-top: 8px; }
+  
+
+/*** Icons ***/
+.icon {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    text-align: left;
+    margin-right: 10px;
+}
+  
+.profile-icon, .notification-icon {
+    margin-left: 10px;
+    margin-top: 22px;
+    width:30px;
+    height: 30px;;
+}
+  
+svg:hover { fill: #b175ff; }
+
+svg { fill: white; }
+
+.search-icon { fill: #333; }
+  
+
 .container {
     line-height: 2;
     text-align: justify;
@@ -10,7 +113,9 @@
     margin: 30px;
 }
 
-
+main {
+    margin-top: 90px;
+}
 
 img {
     margin: 20px;
