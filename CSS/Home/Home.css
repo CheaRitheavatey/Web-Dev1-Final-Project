@@ -1,16 +1,13 @@
 /* Import fonts: Poppins and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 
 body {
     margin: 0;
     padding: 0;
     background-color: white;
-}
-  
-header {
-    color: black;
 }
 
 
@@ -30,9 +27,12 @@ nav {
     box-shadow: 0 0px 4px #666;
 }
 
-img {
-    margin-top: 10px;
-    margin-left: 10px;
+.logo {
+    margin-right: 230px;
+    margin-top: 15px;
+    color: white;
+    font-family: Playfair Display;
+    font-size: 2em;
 }
   
 .navigation-menu {
@@ -43,7 +43,7 @@ img {
 }
   
 nav li {
-    margin-right: 40px;
+    margin-right: 20px;
     display: inline-block;
     font-size: 1.1em;
     font-family: Raleway;
@@ -123,7 +123,7 @@ svg { fill: white; }
     margin-left: 30%;
 }
 
-.hero-section-bookcover img { width: 300px; height: 420px; }
+.hero-section-bookcover img { width: 290px; height: 420px; }
 
 .hero-section { 
     display: grid; 
@@ -251,6 +251,10 @@ main section h4 {
     text-align: left;
 }
 
+.books li img {
+    max-width: 100%;
+}
+
 .book { 
     width: 185px; 
     height: 270px; 
@@ -279,7 +283,7 @@ main section h4 {
     margin: 0;
     padding: 0;
     font-family: Poppins;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 
 a { text-decoration: none; }
@@ -396,7 +400,7 @@ a { text-decoration: none; }
 
 .subscription-form button {
     width: 130px;
-    height: 45px;
+    height: 40px;
     font-size: medium;
     background-color: #b175ff;
     font-family: Raleway;
