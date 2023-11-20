@@ -100,6 +100,42 @@ svg { fill: white; }
 
 .search-icon { fill: #333; }
   
+
+/* drop down menu */
+.dropdown {
+
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+font-size: 0.85em;
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #4c2fa0;}
+
 main {
     display: flex;
     margin-top: 15%;
@@ -118,23 +154,33 @@ main {
 .leftpanel {
     /* border: 2px solid black; */
     box-sizing: content-box;
-    align-self: center;
-    
+    align-self: center;   
+}
+
+img { 
+    transition: 0.3s;
+}
+
+img:hover {
+    scale: 1.075;
+    background-color: black;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.2);
 }
 
 .bottomleft {
     /* border: 2px solid black; */
+    margin-top: 50px;
     box-sizing: content-box;
     text-align: center;
 }
 
 .bottomleft li {
-    align-items: center;
+    /* align-items: center; */
     color: #666;
     font-family: Poppins;
     font-size: 1em;
     list-style-type: none;
-    line-height: 1;
+    line-height: 1.5;
     text-align: justify;
     box-sizing: content-box;
 }
@@ -165,3 +211,127 @@ button:hover {
     /* border: 2px solid black; */
     box-sizing: border-box;
 }
+
+/* line */
+.line {
+    width: 2px;
+    background-color: grey;
+    height: 800px; /* Adjust the height to match the panels' height */
+    position: absolute;
+    margin-right: 22%;
+    /* Adjust the left position to match the width of the left panel and add some space */
+  }
+
+  /* back button */
+.back a{
+    text-decoration: none;
+    margin-left: 2%;
+    line-height: 2;
+    /* border: 2px solid;  */
+}
+
+.back {
+    height: 20px;
+}
+
+/* ------------------------------------- */
+        /*** Footer Section ***/
+/* ------------------------------------- */
+* {
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+    margin-top: 8%;
+	background-color: #333;
+    padding: 70px 0;
+}
+
+.footer-col {
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 1em;
+    font-family: Raleway;
+    color: white;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #b175ff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 0.9em;
+    font-family: Poppins;
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: white;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #666;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #b175ff;
+	background-color: white;
+}
+
+.copyright { 
+    color: white;
+    font-family: Raleway;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/*** Responsive Footer ***/
+

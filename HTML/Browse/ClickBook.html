@@ -6,17 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>digital library for my book webpage</title>
     <link rel="stylesheet" href="/CSS/Browse/ClickBook.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 
 
 <body>
+    <!-- header start -->
     <header>
-        <!-- Main Navigation start-->
         <nav class="navigation-menu">
             <img src="/IMAGES/Logo.png" alt="Website Logo">
             <ul class="nav-items">
                 <li><a href="Home.html">Home</a></li>
-                <li><a href="Browse.html">Browse</a></li>
+                <!-- <li><a href="Browse.html">Browse</a></li> -->
+                <li><div class="dropdown">
+                  <a href="newNav.html">Browse</a>
+                  <div class="dropdown-content">
+                    <a href="#">Fantasy</a>
+                    <a href="#">Non-fiction</a>
+                    <a href="#">Thriller</a>
+                    <a href="#">Manga</a>
+                  </div>
+                </div>
+                </li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="MyAccount.html">My Account</a></li>
             </ul>
@@ -43,15 +55,15 @@
             </div>
         </nav>
     </header>
-    <!-- main navigation end -->
+    <!-- header end -->
 
 <main>
-    <div class="allleft">
-        <!-- left panel start -->
+    <!-- left panel start -->
+    <div class="allleft">        
         <div class="leftpanel">
             <img height="400px" src="/images/Nonfiction/Atomic-Habits-BookCover.jpg" alt="Atomic-Habits-BookCover">
         </div>
-        <!-- left panel end -->
+        
 
         <div class="bottomleft">
             <ul>
@@ -67,42 +79,73 @@
             <audio controls src="/images/ameliavol3_01_fielding_64kb.mp3" title="Audio Book"></audio>
         </div>
     </div>
-    
+    <!-- left panel end -->
+
+    <!-- add line -->
+    <div class="line"></div>
 
     <!-- right panel start-->
     <div class="rightpanel">
-        <iframe src="/PDF/Atomic-Habits-old.pdf" style="width: 600px; height: 768px;" frameborder="0"></iframe>
+        <iframe src="/PDF/Atomic-Habits-old.pdf" style="width: 600px; height: 800px;" frameborder="0"></iframe>
     </div>
     <!-- right panel end -->
+
 </main>
+
+<div class="back">
+    <a href="/HTML/Browse/slide.html">Back</a>
+</div>
         
-    <!-- <main>
+    <!-- Footer Section start-->
+    <footer class="footer">
         <div class="container">
-            <div class="panel">
-                <h3>Fantasy Book</h3>
-                <div class="leftpanel">
-                    <img height="400px" src="/images/Nonfiction/Atomic-Habits-BookCover.jpg" alt="Book Cover">
-                    <a style="--clr:#1e9bff" class="button" href="#" title="download"><span>download</span></a>
-                    <a style="--clr:#1e9bff" class="button" href="#" title="Read Later"><span>Read later</span></a>
-                    <audio controls src="/images/ameliavol3_01_fielding_64kb.mp3" title="audio book"></audio>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">About The Rkhive</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
                 </div>
-                
-        
-                <div class="rightpanel">
-                    <iframe src="/PDF/Atomic-Habits-old.pdf" style="width: 600px; height: 900px;" frameborder="0"></iframe>
+
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
                 </div>
-            </div>
-           
-    
-            <div class="bottompanel">
-                <h2>title: Atomic Habits</h2>
-                    <h3>Author: James Clear
-                        <br>
-                        ISBN: 978-0735211292 
-                    </h3>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/HTML/Home/Home.html">Home</a></li>
+                        <li><a href="/HTML/Browse/Browse.html">Browse</a></li>
+                        <li><a href="/HTML/Blog/Blog.html">Blog</a></li>
+                        <li><a href="/HTML/MyBooks/MyBooks.html">My Books</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; The Rkhive 2023. All Rights Reserved.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </main> -->
+   </footer>    
+   <!-- footer section end -->
     
 </body>
 </html>
