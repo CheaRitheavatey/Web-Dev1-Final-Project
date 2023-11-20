@@ -14,7 +14,10 @@ header {
 }
 
 
-/* Navigation Menu */
+
+/* ------------------------------------- */
+        /* Navigation Menu */
+/* ------------------------------------- */
 .navigation-menu ul { font-family: serif; }
 
 nav {
@@ -60,7 +63,10 @@ nav li a {
 nav li a:hover { color: #b175ff; }
 
 
-/* Search Box */
+
+/* ------------------------------------- */
+            /* Search Box */
+/* ------------------------------------- */
 .search-box {
     margin-left: 110px;
     background-color: white;
@@ -83,7 +89,10 @@ nav li a:hover { color: #b175ff; }
 .search-box svg { margin-top: 8px; }
   
 
-/* Icons */
+
+/* ------------------------------------- */
+                /* Icons */
+/* ------------------------------------- */
 .icon {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -105,7 +114,10 @@ svg { fill: white; }
 .search-icon { fill: #333; }
   
 
-/*** Hero Section ***/
+
+/* ------------------------------------- */
+        /*** Hero Section ***/
+/* ------------------------------------- */
 .hero-section-bookcover { 
     margin-top: 15%; 
     margin-left: 30%;
@@ -162,7 +174,10 @@ svg { fill: white; }
 .hero-button button:hover { background-color: #4c2fa0; }
 
 
-/*** Reader Section ***/
+
+/* ------------------------------------- */
+        /*** Reader Section ***/
+/* ------------------------------------- */
 .reader-section { 
     margin: 0 auto;
     width: 100%; 
@@ -218,7 +233,10 @@ main section h4 {
 .first-reader-column, .second-reader-column { margin-right: 85px; }
 
 
+
+/* ------------------------------------------------ */
 /*** Trending Now, Fantasy, Non-fiction Sections ***/
+/* ------------------------------------------------ */
 .book-section {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -278,7 +296,10 @@ a { text-decoration: none; }
 }
 
 
-/*** Author Spotlight ***/
+
+/* ------------------------------------- */
+        /*** Author Spotlight ***/
+/* ------------------------------------- */
 .author-pic { 
     margin-top: 65px; 
     margin-left: 85px;
@@ -338,11 +359,14 @@ a { text-decoration: none; }
 .author-button button:hover { background-color: #4c2fa0; } 
 
 
-/*** Newsletter Section ***/
+
+/* ------------------------------------- */
+        /*** Newsletter Section ***/
+/* ------------------------------------- */
 .newsletter-section {
     text-align: center;
-    margin-bottom: 80px;
-    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 #email-input {
@@ -358,8 +382,8 @@ a { text-decoration: none; }
 
 .newsletter-section h2 {
     font-size: 2.5em;
-    margin-top: 60px;
-    margin-bottom: 0;
+    margin-top: 80px;
+    margin-bottom: 20px;
     color: #333;
 }
 
@@ -379,4 +403,118 @@ a { text-decoration: none; }
     margin-top: 30px;
     border: 1px solid #b175ff;
     color: white;
+}
+
+
+
+/* ------------------------------------- */
+        /*** Footer Section ***/
+/* ------------------------------------- */
+* {
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #333;
+    padding: 70px 0;
+}
+
+.footer-col {
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 1em;
+    font-family: Raleway;
+    color: white;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #b175ff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 0.9em;
+    font-family: Poppins;
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: white;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #666;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #b175ff;
+	background-color: white;
+}
+
+.copyright { 
+    color: white;
+    font-family: Raleway;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/*** Responsive Footer ***/
+@media(max-width: 767px) {
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px) {
+  .footer-col{
+    width: 100%;
+}
 }
