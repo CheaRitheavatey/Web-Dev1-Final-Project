@@ -167,8 +167,13 @@ button a {
 }
 
 .book-img { 
-    width: 200px; 
-    height: 285px; 
+    width: 210px; 
+    height: 310px; 
+    transition: 0.3s;
+}
+
+.book-img:hover {
+    scale: 1.075;
 }
 
 .continue-reading li, .wish-to-read li, .finished-reading li {
