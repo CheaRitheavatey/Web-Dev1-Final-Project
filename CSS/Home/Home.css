@@ -133,7 +133,7 @@ svg { fill: white; }
     padding-top: 25px;
 }
 
-.hero-section-content { margin-top: 8%; } 
+.hero-section-content { margin-top: 15%; } 
 
 .hero-section-content p { margin-top: 0; }
 
@@ -243,8 +243,8 @@ main section h4 {
 }
 
 .books {
-    margin-right: 85px;
-    margin-left: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -252,8 +252,8 @@ main section h4 {
 }
 
 .book { 
-    width: 210px; 
-    height: 310px; 
+    width: 185px; 
+    height: 270px; 
     transition: 0.3s;
 }
 
@@ -271,7 +271,7 @@ main section h4 {
     font-family: serif;
     color: #333;
     margin-left: 85px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .book-title, .author-genre {
@@ -279,7 +279,7 @@ main section h4 {
     margin: 0;
     padding: 0;
     font-family: Poppins;
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 a { text-decoration: none; }
