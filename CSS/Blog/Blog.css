@@ -114,7 +114,7 @@ svg { fill: white; }
 
 /* header part */
 
-.header h1{
+/* .header h1{
   font-family: serif;
   font-size: 3em;
   color:#333;
@@ -125,11 +125,12 @@ svg { fill: white; }
   font-family: Poppins;
   font-size: 1em;
   color:#666
-}
+} */
 
 .middle {
   margin-right: 85px;
   margin-left: 85px;
+  margin-top: 10%;
 }
 
 /* laying out the box in the blogpost */
