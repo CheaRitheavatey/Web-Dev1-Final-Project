@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Browse</title>
   <!-- Link your existing stylesheet -->
-  <link rel="stylesheet" href="/CSS/Browse/newNav.css">
+  <link rel="stylesheet" href="/CSS/Browse/Browse.css">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -13,13 +13,13 @@
 </head>
 <body>
 
-    <!-- header start -->
+    <!-- Header Starts -->
     <header>
         <!-- Main Navigation -->
         <nav class="navigation-menu">
-            <div class="logo"><p><b>The Rkhive</b></p></div>
+            <div class="logo"><a href="/HTML/Home/Home.html"><p><b>The Rkhive</b></p></a></div>
             <ul class="nav-items">
-                <li><a href="Home.html">Home</a></li>
+                <li><a href="/HTML/Home/Home.html">Home</a></li>
                 <li><div class="dropdown">
                     <a href="/HTML/Browse/Browse.html">Browse</a>
                         <div class="dropdown-content">
@@ -30,8 +30,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="MyAccount.html">My Account</a></li>
+                <li><a href="/HTML/Blog/Blog.html">Blog</a></li>
+                <li><a href="/HTML/MyBooks/MyBooks.html">My Books</a></li>
             </ul>
       
             <div class="icon">
@@ -56,174 +56,136 @@
             </div>
         </nav>
     </header>
-    <!-- header end -->
+    <!-- Header Ends -->
 
-<!-- main section start -->
 
-    <!-- fantasy section start -->
+<!-- Main Section Starts -->
+
+    <!-- Fantasy Section Starts -->
     <section class="reading-list1">
         <h3>Fantasy</h3>
-        <div class="swiper">
-            <div>
-                <!-- Add book cover images in each slide 5 books-->
-                <div>
-                    <ul class="wish-to-read">
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/Godkiller-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Godkiller</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
 
-                
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/Antimatter-Blues-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Antimatter Blues</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+        <!-- Add 5 book cover images in each row-> -->
+            <ul class="wish-to-read">
+                <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/Godkiller-BookCover.jpeg" alt="Godkiller">
+                    <p class="book-title">Godkiller</p>
+                    <p class="author-genre">by Hannah Kaner</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/Iron-Flame-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/Antimatter-Blues-BookCover.jpeg" alt="Antimatter Blues">
+                        <p class="book-title">Antimatter Blues</p>
+                        <p class="author-genre">by Edward Ashton</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/The-Deep-Sky-BookCover.jpg" alt="Iron Flame book cover">
-                            <p class="book-title">The Deep Sky</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/Iron-Flame-BookCover.jpeg" alt="Iron Flame">
+                        <p class="book-title">Iron Flame</p>
+                        <p class="author-genre">by Rebecca Yarros</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Fantasy/The-Water-Outlaws-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">The Deep Sky</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
-                    </ul> 
-                </div>
-            </div>
-        </div>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/The-Deep-Sky-BookCover.jpg" alt="The Deep Sky">
+                        <p class="book-title">The Deep Sky</p>
+                        <p class="author-genre">by Yume Kitasei</p></a></li>
+
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/The-Water-Outlaws-BookCover.jpeg" alt="The Water Outlaws">
+                        <p class="book-title">The Water Outlaws</p>
+                        <p class="author-genre">by S.L. Huang</p></a></li>
+                    </ul>          
     </section>    
-    <!-- fantasy section end -->
+    <!-- Fantasy Section Ends -->
 
-    <!-- non-fiction section start -->
+
+    <!-- Non-fiction Section Starts -->
     <section class="reading-list">
         <h3>Non-fiction</h3>
-        <div>
-            <div>
-                <!-- Add book cover images in each slide -->
-                <div>
-                    <ul class="wish-to-read">
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/Atomic-Habits-BookCover.jpg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+        
+                <!-- Add 5 book cover images in each row -->
+                <ul class="wish-to-read">
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Nonfiction/Poverty-by-America-BookCover.png" alt="Poverty, by America">
+                        <p class="book-title">Poverty, by America</p>
+                        <p class="author-genre">by Mattew Desmond</p></a></li>
 
                 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/I-Can't-Save-You-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Nonfiction/Hello-Beautiful-BookCover.jpeg" alt="Hello Beautiful: A novel">
+                        <p class="book-title">Hello Beautiful: A novel</p>
+                        <p class="author-genre">by Ann Napolitano</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/Origin-of-Time-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Nonfiction/I-Can't-Save-You-BookCover.jpeg" alt="I Can't Save You">
+                        <p class="book-title">I Can't Save You</p>
+                        <p class="author-genre">by Anthony Chin-Quee</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/Poverty-by-America-BookCover.png" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Nonfiction/Thicker-Than-Water-BookCover.jpeg" alt="Thicker Than Water">
+                        <p class="book-title">Thicker Than Water</p>
+                        <p class="author-genre">by Kerry Washington</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Nonfiction/Hello-Beautiful-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
-                    </ul>  
-                </div>
-            </div>
-        </div>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Nonfiction/Origin-of-Time-BookCover.jpeg" alt="On the Origin of Time">
+                        <p class="book-title">On the Origin of Time</p>
+                        <p class="author-genre">by Thomas Hertog</p></a></li>
+                </ul>         
     </section>  
-    <!-- non-fiction section end -->
+    <!-- Non-fiction Section Ends -->
 
 
-    <!-- thriller section start -->
+    <!-- Thriller Section Starts -->
     <section class="reading-list">
         <h3>Thriller</h3>
-        <div>
-            <div>
-                <!-- Add book cover images in each slide -->
-                <div>
-                    <ul class="wish-to-read">
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/Good-Bad-Girl-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+        
+                <!-- Add 5 book cover images in each row-->
+                <ul class="wish-to-read">
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/Their-Vicious-Games-BookCover.jpeg" alt="Their Vicious Games">
+                        <p class="book-title">Their Vicious Games</p>
+                        <p class="author-genre">by Joelle Wellington</p></a></li>
 
                 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/The-New-Mother-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/Good-Bad-Girl-BookCover.jpeg" alt="Good Bad Girl">
+                        <p class="book-title">Good Bad Girl</p>
+                        <p class="author-genre">by Alice Feeney</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/The-Spare-Room-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/The-Trap-BookCover.jpeg" alt="The Trap">
+                        <p class="book-title">The Trap</p>
+                        <p class="author-genre">by Catherine Ryan Howard</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/The-Trap-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/The-New-Mother-BookCover.jpeg" alt="The New Mother">
+                        <p class="book-title">The New Mother</p>
+                        <p class="author-genre">by Nora Murphy</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Thriller/Their-Vicious-Games-BookCover.jpeg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
-                    </ul>   
-                </div>
-            </div>
-        </div>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/The-Spare-Room-BookCover.jpeg" alt="The Spare Room">
+                        <p class="book-title">The Spare Room</p>
+                        <p class="author-genre">by Andrea Bartz</p></a></li>
+                </ul>         
     </section>
-    <!-- thriller section end -->
+    <!-- Thriller Section Ends -->
 
-    <!-- Manga section start -->
+
+    <!-- Manga Section Starts -->
     <section class="reading-list">
         <h3>Manga</h3>
-        <div>
-            <div>
-                <!-- Add book cover images in each slide -->
-                <div>
-                    <ul class="wish-to-read">
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu1_.jpg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+            
+                <!-- Add 5 book cover images in each row -->
+                <ul class="wish-to-read">
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Manga/jujutsu1_.jpg" alt="Jujutsu Kaisen Vol. 1">
+                        <p class="book-title">Jujutsu Kaisen Vol. 1</p>
+                        <p class="author-genre">by Gege Akutami</p></a></li>
 
-                
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu2.jpg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Manga/jujutsu2.jpg" alt="Jujutsu Kaisen Vol. 2">
+                        <p class="book-title">Jujutsu Kaisen Vol. 2</p>
+                        <p class="author-genre">by Gege Akutami</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu3.jpg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Manga/jujutsu3.jpg" alt="Jujutsu Kaisen Vol. 3">
+                        <p class="book-title">Jujutsu Kaisen Vol. 3</p>
+                        <p class="author-genre">by Gege Akutami</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu4.jpg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Manga/jujutsu4.jpg" alt="Jujutsu Kaisen Vol. 4">
+                        <p class="book-title">Jujutsu Kaisen Vol. 4</p>
+                        <p class="author-genre">by Gege Akutami</p></a></li>
 
-                        <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/images/Manga/jujutsu5.jpg" alt="Iron Flame book cover">
-                            <p class="book-title">Iron Flame</p>
-                            <p class="author-genre">by Rebecca Yarros</p></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Manga/jujutsu5.jpg" alt="Jujutsu Kaisen Vol. 5">
+                        <p class="book-title">Jujutsu Kaisen Vol. 5</p>
+                        <p class="author-genre">by Gege Akutami</p></a></li>
+                </ul>
     </section>
-    <!-- Manga section end -->
- 
-<!-- main section end -->
+    <!-- Manga Section Ends -->
 
-    <!-- Footer Section start-->
+<!-- Main Section Ends -->
+
+
+    <!-- Footer Section Starts-->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -272,7 +234,6 @@
             </div>
         </div>
    </footer>    
-   <!-- footer section end -->
+   <!-- Footer Section Ends -->
 </body>
 </html>
-

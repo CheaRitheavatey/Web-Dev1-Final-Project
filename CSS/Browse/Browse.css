@@ -1,5 +1,6 @@
 /* Import fonts: Poppins and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
@@ -7,6 +8,8 @@ body {
     padding: 0;
     background-color: white;
 }
+
+
 /* ------------------------------------- */
         /* Navigation Menu */
 /* ------------------------------------- */
@@ -23,9 +26,9 @@ nav {
     box-shadow: 0 0px 4px #666;
 }
 
-body {
+/* body {
     margin-top: 8%;
-}
+} */
 
 .logo {
     margin-right: 230px;
@@ -150,25 +153,28 @@ svg:hover { fill: #b175ff; }
 svg { fill: white; }
 
 .search-icon { fill: #333; }
-/* nav end  */
 
-  /* reading list */
+/* --------- Navigation Header Ends ------- */
+
+
+
+/* ------------------------------------- */
+            /* Reading List */
+/* ------------------------------------- */
 .reading-list {
-    flex:1;
-    padding:20px;
-    margin-top: 8%px;
-    /* margin-bottom: 3px; */
+    flex: 1;
+    margin-top: 80px;
+    margin-bottom: 0;
 }
 
-.continue-reading, .wish-to-read, .finished-reading {
-    margin-right: 85px;
-    margin-left: 40px;
+.wish-to-read {
+    margin-right: 100px;
+    margin-left: 100px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
 }
-
 
 .book-img { 
     width: 185px; 
@@ -177,11 +183,7 @@ svg { fill: white; }
     box-shadow: 2px 3px 4px #666;
 }
 
-.book-img:hover {
-    scale: 1.075;
-    /* background-color: black; */
-    /* box-shadow: 8px 8px 8px rgba(0,0,0,0.2); */
-}
+.book-img:hover { scale: 1.075; }
 
 .wish-to-read li {
     display: flex;
@@ -191,21 +193,20 @@ svg { fill: white; }
 }
 
 .reading-list h3{
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-family: serif;
     color: #333;
     margin-left: 85px;
-    margin-bottom: 0;
-    margin-top: 8%;
+    margin-bottom: 10px;
 }
 
 .reading-list1 h3 {
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-family: serif;
     color: #333;
     margin-left: 85px;
-    margin-bottom: 0;
-    margin-top: 13%;
+    margin-bottom: 10px;
+    margin-top: 10%;
 }
 
 .book-title, .author-genre {
@@ -213,7 +214,7 @@ svg { fill: white; }
     margin: 0;
     padding: 0;
     font-family: Poppins;
-    margin-left: 8px;
+    margin-left: 2px;
 }
 
 a { text-decoration: none; }
@@ -228,6 +229,7 @@ a { text-decoration: none; }
     color: #b175ff;
     font-size: 0.75em;
 }
+
 
 /* ------------------------------------- */
         /*** Footer Section ***/
@@ -339,7 +341,7 @@ ul {
     }
   }
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .reading-list {
         margin-top: 40px; /* Adjust this value for smaller screens */
         margin-bottom: 10px; /* Adjust this value for smaller screens */
@@ -352,11 +354,10 @@ ul {
       width: 50%;
       margin-bottom: 30px;
   }
-  }
+}
   
-  @media(max-width: 574px) {
+@media(max-width: 574px) {
     .footer-col{
       width: 100%;
   }
-  }
-  
+}
