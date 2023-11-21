@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
-    display: flex;
-    flex-direction: row;
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 /* ------------------------------------- */
@@ -146,11 +145,21 @@ svg { fill: white; }
 
 .search-icon { fill: #333; }
 
+/* -------------------------- */
+/* Main Content */
+/* -------------------------- */
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 85px;
+    margin-right:85px;
+}
+
 /* Account Information */
 
 .account-info{
     margin-right: 0;
-    margin-left: 85px;
     margin-top: 8%;
     flex: 0.25;
 }
@@ -181,13 +190,14 @@ svg { fill: white; }
     font-family: Poppins;
     font-size: 1em;
     list-style-type: none;
-    margin-left: -45px;
     line-height: 2;
 }
 
 .user-info{
     margin-top: 20px;
 }
+
+/* edit in formation button */
 .edit-button button{
     width: 170px;
     height: 45px;
@@ -208,7 +218,15 @@ svg { fill: white; }
     flex:1; 
     margin-top: 8%;
     margin-bottom: 65px;
-    margin-right:85px;
+}
+
+/* the heading of each section */
+.reading-list h3 {
+    font-size: 1.7em;
+    font-family: serif;
+    color: #333;
+    margin-top: 1.5%;
+    margin-bottom: 10px;
 }
 
 .continue-reading, .wish-to-read, .finished-reading {
@@ -219,12 +237,16 @@ svg { fill: white; }
     text-align: left;
     margin-bottom: 50px;
 }
-
+/* book image */
 .book-img { 
     width: 185px; 
     height: 270px; 
     margin-top: 0;
+    transition: 0.3s;
+    box-shadow: 2px 3px 4px #666;
 }
+
+.book-img:hover { scale: 1.075; }
 
 .continue-reading li, .wish-to-read li, .finished-reading li {
     display: flex;
@@ -233,13 +255,6 @@ svg { fill: white; }
     margin-top: 0;
 }
 
-.reading-list h3 {
-    font-size: 1.7em;
-    font-family: serif;
-    color: #333;
-    margin-bottom: 0;
-    margin-left:37px;
-}
 
 .book-title, .author-genre {
     text-align: left;
@@ -259,4 +274,116 @@ a { text-decoration: none; }
 .author-genre {
     color: #b175ff;
     font-size: 0.75em;
+}
+
+/* ------------------------------------- */
+        /*** Footer Section ***/
+/* ------------------------------------- */
+* {
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #333;
+    padding: 70px 0;
+}
+
+.footer-col {
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 1em;
+    font-family: Raleway;
+    color: white;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #b175ff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 0.9em;
+    font-family: Poppins;
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: white;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #666;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #b175ff;
+	background-color: white;
+}
+
+.copyright { 
+    color: white;
+    font-family: Raleway;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/*** Responsive Footer ***/
+@media(max-width: 767px) {
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px) {
+  .footer-col{
+    width: 100%;
+}
 }
