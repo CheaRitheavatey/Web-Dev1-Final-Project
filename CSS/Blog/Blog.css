@@ -172,7 +172,7 @@ main {
 /* Laying Out the Box in the Blogpost */
 .blog-post {
   display: flex;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .blog-image { margin-right: 20px; }
@@ -182,7 +182,7 @@ main {
   display: flex;
   flex-direction: column;
   flex:5;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .author-profile {
@@ -197,7 +197,7 @@ main {
   font-family: Poppins;
   color:#666;
   line-height: 1.5;
-  margin-left: 25px;
+  margin-left: 15px;
   font-size: 0.9em;
 }
 
@@ -251,7 +251,7 @@ main {
 
 .blog-image img {
   height: 250px;
-  width: 360px;
+  width: 370px;
 }
 
 
