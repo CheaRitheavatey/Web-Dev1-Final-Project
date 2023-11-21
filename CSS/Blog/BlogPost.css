@@ -1,9 +1,150 @@
 /* Import fonts: Poppins and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-/* For the Header */
 
-/* End of the header */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+/* ------------------------------------- */
+        /* Navigation Menu */
+/* ------------------------------------- */
+.navigation-menu ul { font-family: serif; }
+
+nav {
+    background-color: #4c2fa0;
+    height: 80px;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    box-shadow: 0 0px 4px #666;
+}
+
+.logo {
+    margin-right: 230px;
+    margin-top: 15px;
+    font-family: Playfair Display;
+    font-size: 2em;
+}
+
+.logo a { color: white; }
+  
+.navigation-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    position: fixed;
+    margin-top: 0;
+}
+  
+nav li {
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: Raleway;
+    margin-top: 30px;
+}
+
+nav ul {
+    white-space: nowrap;
+    margin: 0 auto;
+}
+  
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+  
+nav li a:hover { color: #b175ff; }
+
+
+
+/* ------------------------------------- */
+        /* Dropdown Button */
+/* ------------------------------------- */
+button a { font-size: 1.2em; }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 0.85em;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #4c2fa0;}
+
+
+
+/* ------------------------------------- */
+            /* Search Box */
+/* ------------------------------------- */
+.search-box {
+    margin-left: 110px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 250px;
+    height: 35px;
+    border-radius: 10rem;
+    border-color: black;
+    margin-top: 20px;
+}
+  
+.search-box input {
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    width: 12rem;
+}
+  
+.search-box svg { margin-top: 8px; }
+  
+
+
+/* ------------------------------------- */
+                /* Icons */
+/* ------------------------------------- */
+.icon {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    text-align: left;
+    margin-right: 10px;
+}
+  
+.profile-icon, .notification-icon {
+    margin-left: 10px;
+    margin-top: 22px;
+    width:30px;
+    height: 30px;;
+}
+  
+svg:hover { fill: #b175ff; }
+
+svg { fill: white; }
+
+.search-icon { fill: #333; }
 
 /* For the Title of the the blog */
 h1{
@@ -46,4 +187,116 @@ main{
     margin: 0 auto;
     padding: 10px;
     text-align: justify;
+}
+
+/* ------------------------------------- */
+        /*** Footer Section ***/
+/* ------------------------------------- */
+* {
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #333;
+    padding: 70px 0;
+}
+
+.footer-col {
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 1em;
+    font-family: Raleway;
+    color: white;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #b175ff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 0.9em;
+    font-family: Poppins;
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: white;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #666;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #b175ff;
+	background-color: white;
+}
+
+.copyright { 
+    color: white;
+    font-family: Raleway;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/*** Responsive Footer ***/
+@media(max-width: 767px) {
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px) {
+  .footer-col{
+    width: 100%;
+}
 }

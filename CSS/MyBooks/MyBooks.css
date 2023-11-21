@@ -25,10 +25,11 @@ nav {
 .logo {
     margin-right: 230px;
     margin-top: 15px;
-    color: white;
     font-family: Playfair Display;
     font-size: 2em;
 }
+
+.logo a { color: white; }
   
 .navigation-menu {
     display: grid;
@@ -146,7 +147,7 @@ svg { fill: white; }
 .search-icon { fill: #333; }
 
 /* -------------------------- */
-/* Main Content */
+        /* Main Content */
 /* -------------------------- */
 
 main{
@@ -161,29 +162,34 @@ main{
 .account-info{
     margin-right: 0;
     margin-top: 8%;
-    flex: 0.25;
+    flex: 0.20;
+    border-style: dotted;
 }
 
 
 .profile{
-    display: flex;
+    display:flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
+    margin-top: 2%;
+
+    border-style: dashed;
 }
 
 .profile img{
-    width: 60px;
-    height: 60px;
-    
+    width: 80px;
+    height: 80px;
+    align-items: center;
 }
 
-.Welcome{
+/* .Welcome{
     margin-left: 15px;
     color:#333;
     font-family: serif;
     font-size: 1.5em;
     font-weight: bold;
-}
+} */
 
 .user-info li{
     color: #666;
@@ -197,10 +203,10 @@ main{
     margin-top: 20px;
 }
 
-/* edit in formation button */
+/* edit information button */
 .edit-button button{
     width: 170px;
-    height: 45px;
+    height: 40px;
     margin: 30px; 
     font-size: medium;
     margin-left: 0;
@@ -218,6 +224,8 @@ main{
     flex:1; 
     margin-top: 8%;
     margin-bottom: 65px;
+    border-style: groove;
+    margin-left: 5%;
 }
 
 /* the heading of each section */
@@ -227,6 +235,7 @@ main{
     color: #333;
     margin-top: 1.5%;
     margin-bottom: 10px;
+    border-style: groove;
 }
 
 .continue-reading, .wish-to-read, .finished-reading {
