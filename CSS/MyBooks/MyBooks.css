@@ -8,6 +8,8 @@ body {
     padding: 0;
     background-color: white;
 }
+
+
 /* ------------------------------------- */
         /* Navigation Menu */
 /* ------------------------------------- */
@@ -168,32 +170,29 @@ main{
 
 /* Account Information */
 
-.account-info{
+.account-info {
     margin-right: 0;
-    margin-top: 15%;
+    margin-top: 5%;
     flex: 0.20;
-    /* border-style: dotted; */
 }
 
-
-.profile{
+.profile {
     display:flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 5%;
-    /* border-style: dashed; */
 }
 
-.profile img{
-    width: 100px;
-    height: 100px;
+.profile img {
+    width: 120px;
+    height: 120px;
     align-items: center;
 }
 
 
-.user-info li{
-    color: #666;
+.user-info li {
+    color: #333;
     font-family: Poppins;
     font-size: 1em;
     list-style-type: none;
@@ -204,7 +203,7 @@ main{
     margin-top: 20px;
 }
 
-/* edit information button */
+/* Edit information button */
 .edit-button button{
     width: 170px;
     height: 40px;
@@ -220,15 +219,15 @@ main{
 
 
 
-/* reading list */
+/* Reading List */
 .reading-list {
     flex:1; 
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 65px;
     margin-left: 5%;
 }
 
-/* the heading of each section */
+/* The heading of each section */
 .reading-list h3 {
     font-size: 1.7em;
     font-family: serif;
@@ -245,7 +244,9 @@ main{
     text-align: left;
     margin-bottom: 50px;
 }
-/* book image */
+
+
+/* Book image */
 .book-img { 
     width: 185px; 
     height: 270px; 
@@ -263,7 +264,6 @@ main{
     margin-top: 0;
 }
 
-
 .book-title, .author-genre {
     text-align: left;
     margin: 0;
@@ -272,9 +272,7 @@ main{
     margin-left: 2px;
 }
 
-.book-title{
-    margin-top: 10px;
-}
+.book-title { margin-top: 10px; }
 
 a { text-decoration: none; }
 
@@ -287,6 +285,7 @@ a { text-decoration: none; }
     color: #b175ff;
     font-size: 0.75em;
 }
+
 
 /* ------------------------------------- */
         /*** Footer Section ***/

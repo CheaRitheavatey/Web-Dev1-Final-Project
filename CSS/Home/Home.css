@@ -158,11 +158,15 @@ svg { fill: white; }
         /*** Hero Section ***/
 /* ------------------------------------- */
 .hero-section-bookcover { 
-    margin-top: 15%; 
+    margin-top: 20%; 
     margin-left: 30%;
 }
 
-.hero-section-bookcover img { width: 290px; height: 420px;  box-shadow: 3px 5px 10px #666;}
+.hero-section-bookcover img { 
+    width: 290px; 
+    height: 420px;  
+    box-shadow: 3px 5px 10px #666;
+}
 
 .hero-section { 
     display: grid; 
@@ -172,7 +176,7 @@ svg { fill: white; }
     padding-top: 25px;
 }
 
-.hero-section-content { margin-top: 15%; } 
+.hero-section-content { margin-top: 20%; } 
 
 .hero-section-content p { margin-top: 0; }
 
