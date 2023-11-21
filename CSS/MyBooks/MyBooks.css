@@ -155,15 +155,16 @@ main{
     flex-direction: row;
     margin-left: 85px;
     margin-right:85px;
+    /* margin-top: 5%; */
 }
 
 /* Account Information */
 
 .account-info{
     margin-right: 0;
-    margin-top: 8%;
+    margin-top: 15%;
     flex: 0.20;
-    border-style: dotted;
+    /* border-style: dotted; */
 }
 
 
@@ -172,24 +173,16 @@ main{
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    margin-top: 2%;
-
-    border-style: dashed;
+    margin-top: 5%;
+    /* border-style: dashed; */
 }
 
 .profile img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     align-items: center;
 }
 
-/* .Welcome{
-    margin-left: 15px;
-    color:#333;
-    font-family: serif;
-    font-size: 1.5em;
-    font-weight: bold;
-} */
 
 .user-info li{
     color: #666;
@@ -222,9 +215,8 @@ main{
 /* reading list */
 .reading-list {
     flex:1; 
-    margin-top: 8%;
+    margin-top: 15%;
     margin-bottom: 65px;
-    border-style: groove;
     margin-left: 5%;
 }
 
@@ -233,9 +225,8 @@ main{
     font-size: 1.7em;
     font-family: serif;
     color: #333;
-    margin-top: 1.5%;
     margin-bottom: 10px;
-    border-style: groove;
+
 }
 
 .continue-reading, .wish-to-read, .finished-reading {
@@ -264,13 +255,17 @@ main{
     margin-top: 0;
 }
 
+.book-title{
+    margin-top: 10px;
 
+}
 .book-title, .author-genre {
     text-align: left;
     margin: 0;
+    /* margin-top: 10px; */
     padding: 0;
     font-family: Poppins;
-    margin-left: 8px;
+    margin-left: 2px;
 }
 
 a { text-decoration: none; }
