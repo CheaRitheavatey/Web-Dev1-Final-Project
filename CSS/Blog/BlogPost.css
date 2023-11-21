@@ -17,7 +17,7 @@ nav {
     background-color: #4c2fa0;
     height: 80px;
     text-align: center;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     color: white;
     box-shadow: 0 0px 4px #666;
@@ -150,6 +150,7 @@ svg:hover { fill: #b175ff; }
 svg { fill: white; }
 
 .search-icon { fill: #333; }
+/* nav end */
 
 /* For the Title of the the blog */
 h1{

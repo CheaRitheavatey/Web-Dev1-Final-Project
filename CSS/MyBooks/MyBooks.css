@@ -1,3 +1,4 @@
+/* Import fonts: Poppins and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
@@ -6,20 +7,24 @@ body {
     padding: 0;
     background-color: white;
 }
-
 /* ------------------------------------- */
         /* Navigation Menu */
 /* ------------------------------------- */
 .navigation-menu ul { font-family: serif; }
 
 nav {
+    top: 0;
     background-color: #4c2fa0;
     height: 80px;
     text-align: center;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     color: white;
     box-shadow: 0 0px 4px #666;
+}
+
+body {
+    margin-top: 8%;
 }
 
 .logo {
@@ -145,6 +150,8 @@ svg:hover { fill: #b175ff; }
 svg { fill: white; }
 
 .search-icon { fill: #333; }
+/* nav end */
+
 
 /* -------------------------- */
         /* Main Content */
