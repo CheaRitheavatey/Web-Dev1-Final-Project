@@ -13,6 +13,7 @@ body {
 .navigation-menu ul { font-family: serif; }
 
 nav {
+    top: 0;
     background-color: #4c2fa0;
     height: 80px;
     text-align: center;
@@ -20,6 +21,10 @@ nav {
     width: 100%;
     color: white;
     box-shadow: 0 0px 4px #666;
+}
+
+body {
+    margin-top: 8%;
 }
 
 .logo {

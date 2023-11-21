@@ -2,32 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-
 body {
     margin: 0;
     padding: 0;
     background-color: white;
 }
-
-
-/*** Navigation Menu ***/
-.navigation-menu ul { font-family: Raleway; }
+/* ------------------------------------- */
+        /* Navigation Menu */
+/* ------------------------------------- */
+.navigation-menu ul { font-family: serif; }
 
 nav {
     top: 0;
     background-color: #4c2fa0;
     height: 80px;
     text-align: center;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     color: white;
-    box-shadow: 0 0px 8px #666;
+    box-shadow: 0 0px 4px #666;
 }
 
-img {
-    margin-top: 10px;
-    margin-left: 10px;
+body {
+    margin-top: 8%;
 }
+
+.logo {
+    margin-right: 230px;
+    margin-top: 15px;
+    font-family: Playfair Display;
+    font-size: 2em;
+}
+
+.logo a { color: white; }
   
 .navigation-menu {
     display: grid;
@@ -37,9 +44,10 @@ img {
 }
   
 nav li {
-    margin-right: 40px;
+    margin-right: 20px;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-family: Raleway;
     margin-top: 30px;
 }
 
@@ -56,7 +64,47 @@ nav li a {
 nav li a:hover { color: #b175ff; }
 
 
-/*** Search Box ***/
+
+/* ------------------------------------- */
+        /* Dropdown Button */
+/* ------------------------------------- */
+button a { font-size: 1.2em; }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 0.85em;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #4c2fa0;}
+
+
+
+/* ------------------------------------- */
+            /* Search Box */
+/* ------------------------------------- */
 .search-box {
     margin-left: 110px;
     background-color: white;
@@ -79,7 +127,10 @@ nav li a:hover { color: #b175ff; }
 .search-box svg { margin-top: 8px; }
   
 
-/*** Icons ***/
+
+/* ------------------------------------- */
+                /* Icons */
+/* ------------------------------------- */
 .icon {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -99,46 +150,11 @@ svg:hover { fill: #b175ff; }
 svg { fill: white; }
 
 .search-icon { fill: #333; }
-  
-
-/* drop down menu */
-.dropdown {
-
-position: relative;
-display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-font-size: 0.85em;
-display: none;
-position: absolute;
-background-color: #f1f1f1;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #4c2fa0;}
+/* nav end */
 
 main {
     display: flex;
-    margin-top: 15%;
+    margin-top: 8%;
     justify-content: center;
     grid-gap: 9em;
 }
@@ -152,9 +168,10 @@ main {
 
 /* panel left */
 .leftpanel {
+    margin-left: 8%;
     /* border: 2px solid black; */
     box-sizing: content-box;
-    align-self: center;   
+    /* align-self: center;    */
 }
 
 img { 
@@ -177,18 +194,19 @@ img:hover {
 .bottomleft li {
     /* align-items: center; */
     color: #666;
-    font-family: Poppins;
+    font-family: sans-serif;
     font-size: 1em;
     list-style-type: none;
     line-height: 1.5;
     text-align: justify;
     box-sizing: content-box;
+    margin-left: 8%;
 }
 
 button {
-    display: flex;
-    flex-direction: column;
-    width: 170px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    width: 125px;
     height: 50px;
     margin: 30px; 
     font-size: large;
@@ -198,11 +216,16 @@ button {
     background-color: #b175ff;
     align-items: center;
     justify-content: center;
+    margin-left: 8%;
+    margin-right: 2%;
 }
 
 button:hover {
     background-color: #4c2fa0;
 }
+audio {
+    margin-left: 8%;
+ }
 
 
 /* panel right */
@@ -210,6 +233,7 @@ button:hover {
     float: right;
     /* border: 2px solid black; */
     box-sizing: border-box;
+    margin-right: 8%;
 }
 
 /* line */
@@ -218,20 +242,27 @@ button:hover {
     background-color: grey;
     height: 800px; /* Adjust the height to match the panels' height */
     position: absolute;
-    margin-right: 22%;
+    margin-right: 27%;
     /* Adjust the left position to match the width of the left panel and add some space */
   }
 
   /* back button */
 .back a{
     text-decoration: none;
-    margin-left: 2%;
-    line-height: 2;
-    /* border: 2px solid;  */
+    /* margin-left: 8%; */
+    /* line-height: 2; */
+    /* border: 2px;  */
 }
 
 .back {
-    height: 20px;
+    margin-top: 8%;
+    margin-left: 8%;
+
+    /* margin-bottom: 1%; */
+    /* height: 20px; */
+    font-family: 'Raleway';
+    border: 1px #333;
+    background-color: white;
 }
 
 /* ------------------------------------- */
