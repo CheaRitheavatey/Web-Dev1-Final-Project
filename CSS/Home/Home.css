@@ -30,10 +30,11 @@ nav {
 .logo {
     margin-right: 230px;
     margin-top: 15px;
-    color: white;
     font-family: Playfair Display;
     font-size: 2em;
 }
+
+.logo a { color: white; }
   
 .navigation-menu {
     display: grid;
@@ -61,6 +62,7 @@ nav li a {
 }
   
 nav li a:hover { color: #b175ff; }
+
 
 
 
@@ -93,11 +95,11 @@ button a { font-size: 1.2em; }
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover { background-color: #ddd; }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content { display: block; }
 
-.dropdown:hover .dropbtn {background-color: #4c2fa0;}
+.dropdown:hover .dropbtn { background-color: #4c2fa0; }
 
 
 
@@ -156,11 +158,15 @@ svg { fill: white; }
         /*** Hero Section ***/
 /* ------------------------------------- */
 .hero-section-bookcover { 
-    margin-top: 15%; 
+    margin-top: 20%; 
     margin-left: 30%;
 }
 
-.hero-section-bookcover img { width: 290px; height: 420px; }
+.hero-section-bookcover img { 
+    width: 290px; 
+    height: 420px;  
+    box-shadow: 3px 5px 10px #666;
+}
 
 .hero-section { 
     display: grid; 
@@ -170,7 +176,7 @@ svg { fill: white; }
     padding-top: 25px;
 }
 
-.hero-section-content { margin-top: 15%; } 
+.hero-section-content { margin-top: 20%; } 
 
 .hero-section-content p { margin-top: 0; }
 
@@ -288,14 +294,11 @@ main section h4 {
     text-align: left;
 }
 
-.books li img {
-    max-width: 100%;
-}
-
 .book { 
     width: 185px; 
     height: 270px; 
     transition: 0.3s;
+    box-shadow: 2px 3px 4px #666;
 }
 
 .book:hover { scale: 1.075; }
