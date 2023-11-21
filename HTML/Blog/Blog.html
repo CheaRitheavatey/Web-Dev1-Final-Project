@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +11,51 @@
 
 
 <body>
-    
-
-
-    <!-- Main Content -->
-    <main>
+  <header>
+    <!-- Main Navigation -->
+    <nav class="navigation-menu">
+        <div class="logo"><a href="/HTML/Home/Home.html"><p><b>The Rkhive</b></p></a></div>
+        <ul class="nav-items">
+            <li><a href="/HTML/Home/Home.html">Home</a></li>
+            <li><div class="dropdown">
+                <a href="/HTML/Browse/Browse.html">Browse</a>
+                    <div class="dropdown-content">
+                        <a href="#">Fantasy</a>
+                        <a href="#">Non-fiction</a>
+                        <a href="#">Thriller</a>
+                        <a href="#">Manga</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="/HTML/Blog/Blog.html">Blog</a></li>
+            <li><a href="/HTML/MyBooks/MyBooks.html">My Books</a></li>
+        </ul>
+  
+        <div class="icon">
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </div>
+  
+            <div class="profile-bell-icons">
+                <svg class="profile-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+  
+                <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <!-- Main Content -->
+  <main>
+  <!-- <section class="middle"> -->
       <div class="header">
         <h1>Welcome to Our Blog</h1>
         <p>Read our latest posts below</p>
@@ -22,60 +63,148 @@
       
       <!-- Blog Post 1 -->
       <div class="blog-post">
-        <h2>Embracing the Art of Reading: Cultivating the Reading Habit</h2>
-        <div class="author-profile">
-          <img src="author2.jpg" alt="Author 2">
-          <p class="author-name">blank</p>
+        <!-- The image display on the left side -->
+        <div class="blog-image">
+          <a href="BlogPost1.html"><img src="/IMAGES/Readingimg.jpg" alt="reading image"></a>
         </div>
-        <p>Published on: November 16, 2023</p>
-        <p>"Cultivating a reading habit opens doors to diverse perspectives, personal growth, and a transformative 
-          journey through the pages of books."</p>
-        <a href="BlogPost1.html">Read more</a>
+        <!-- The infomation of the blog on the right side -->
+        <div class="blog-info">
+          <div class="author-profile">
+            <img src="/IMAGES/Author1.jpg" alt="Sky Lee">
+            <span class="name-date">Sky Lee <br> November 16, 2023</span>
+          </div>
+
+          <div class="blog-content">
+            <a href="BlogPost1.html"><h2>Embracing the Art of Reading: Cultivating the Reading Habit</h2></a>
+            
+            <p>Cultivating the habit of reading offers an immersive and transformative experience, transporting readers to 
+              different worlds, fostering empathy, enhancing mental well-being, and unlocking the boundless power of imagination.</p>
+            <a href="BlogPost1.html">Read more</a>
+          </div>
+        </div>
       </div>
 
 
       <!-- Blog Post 2 -->
       <div class="blog-post">
-        <h2>The Profound Impact of Books: Shaping the Way We Think</h2>
-        <div class="author-profile">
-          <img src="author3.jpg" alt="Author 3">
-          <p class="author-name">blank</p>
-        </div class="content">
-        <p>Published on: November 17</p>
-        <p>Books wield an unparalleled influence, shaping perceptions, fostering empathy, stimulating critical thinking, 
-          and serving as catalysts for personal growth and societal change, fundamentally altering the way individuals 
-          think and perceive the world.</p>
-        <a href="BlogPost2.html">Read more</a>
+        <div class="blog-image">
+          <a href="BlogPost2.html"><img src="/IMAGES/bookimg.jpg" alt="image of a book"></a>
+        </div>
+        
+        <div class="blog-info">    
+          <div class="author-profile">
+            <img src="/IMAGES/Author2.jpg" alt="Anna">
+            <span class="name-date">Anna<br> November 17</span>
+          </div>
+
+          <div  class="blog-content">
+            <a href="BlogPost2.html"><h2>The Profound Impact of Books: Shaping the Way We Think</h2></a>
+            
+            <p>Books wield an unparalleled influence, shaping perceptions, fostering empathy, stimulating critical thinking, 
+              and serving as catalysts for personal growth and societal change, fundamentally altering the way individuals 
+              think and perceive the world.</p>
+            <a href="BlogPost2.html">Read more</a>
+          </div>
+        </div>
       </div>
 
 
       <!-- Blog Post 3 -->
       <div class="blog-post">
-        <h2>Love and Fate: A Review of Shakespeare's 'Romeo and Juliet'</h2>
-        <div class="author-profile">
-          <img src="author1.jpg" alt="Author">
-          <p class="author-name">blank</p>
+        <div class="blog-image">
+          <a href="BlogPost3.html"><img src="/IMAGES/Romeojuliet.jpg" alt="Romeo and Juliet book"></a>
         </div>
-        <p>Published on: November 18, 2023</p>
-        <p>"Shakespeare's 'Romeo and Juliet' tells the story of two young lovers caught in a feud between 
-          their families, showcasing the power of love amidst societal conflict and tragic consequences."</p>
-        <a href="BlogPost3.html">Read more</a>
+
+        <div class="blog-info">
+          <div class="author-profile">
+            <img src="/IMAGES/Author2.jpg" alt="Anna">
+            <span class="name-date">Anna<br> November 18, 2023</span>
+          </div>
+
+          <div class="blog-content">
+            <a href="BlogPost3.html"><h2>Love and Fate: A Review of Shakespeare's 'Romeo and Juliet'</h2></a>
+            
+            <p>Shakespeare's 'Romeo and Juliet' tells the story of two young lovers caught in a feud between 
+              their families, showcasing the power of love amidst societal conflict and tragic consequences.</p>
+            <a href="BlogPost3.html">Read more</a>
+          </div>
+        </div>
       </div>
 
       <!-- Blog Post 4 -->
       <div class="blog-post">
-        <h2>Unveiling the World of Andrea Bartz: A Maestro of Suspense</h2>
-        <div class="author-profile">
-          <img src="author1.jpg" alt="Author">
-          <p class="author-name">blank</p>
+        <div class="blog-image">
+          <a href="BlogPost4.html"><img src="/IMAGES/Andrea-Bartz.jpeg" alt="Andrea Bartz image"></a>
         </div>
-        <p>Published on: November 10, 2023</p>
-        <p>Andrea Bartz, a maestro of suspenseful storytelling, captivates readers with intricate mysteries and 
-          multi-dimensional characters in works like "The Lost Night" and "The Herd," weaving tales that linger 
-          long after the final page.</p>
-        <a href="BlogPost4.html">Read more</a>
+
+        <div class="blog-info">
+        <div class="author-profile">
+          <img src="/IMAGES/Author1.jpg" alt="Sky Lee">
+          <span class="name-date">Sky Lee<br>November 10, 2023</span>
+        </div>
+
+        <div class="blog-content">
+            <a href="BlogPost4.html"><h2>Unveiling the World of Andrea Bartz: A Maestro of Suspense</h2></a>
+
+            <p>Andrea Bartz, a maestro of suspenseful storytelling, captivates readers with intricate mysteries and 
+              multi-dimensional characters in works like "The Lost Night" and "The Herd," weaving tales that linger 
+              long after the final page.</p>
+            <a href="BlogPost4.html">Read more</a>
+          </div>
+        </div>
       </div>
+    <!-- </section> -->
     </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>About Us</h4>
+                  <ul>
+                      <li><a href="#">About The Rkhive</a></li>
+                      <li><a href="#">Our Services</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <h4>Get Help</h4>
+                  <ul>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Support</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <h4>Quick Links</h4>
+                  <ul>
+                      <li><a href="/HTML/Home/Home.html">Home</a></li>
+                      <li><a href="/HTML/Browse/Browse.html">Browse</a></li>
+                      <li><a href="/HTML/Blog/Blog.html">Blog</a></li>
+                      <li><a href="/HTML/MyBooks/MyBooks.html">My Books</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <h4>Follow Us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+
+                  <div class="copyright">
+                      <p>&copy; The Rkhive 2023. All Rights Reserved.</p>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+    </footer>
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +13,21 @@
     <header>
         <!-- Main Navigation -->
         <nav class="navigation-menu">
-            <img src="/IMAGES/Logo.png" alt="Website Logo">
+            <div class="logo"><a href="/HTML/Home/Home.html"><p><b>The Rkhive</b></p></a></div>
             <ul class="nav-items">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Browse.html">Browse</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="MyAccount.html">My Account</a></li>
+                <li><a href="/HTML/Home/Home.html">Home</a></li>
+                <li><div class="dropdown">
+                    <a href="/HTML/Browse/Browse.html">Browse</a>
+                        <div class="dropdown-content">
+                            <a href="#">Fantasy</a>
+                            <a href="#">Non-fiction</a>
+                            <a href="#">Thriller</a>
+                            <a href="#">Manga</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/HTML/Blog/Blog.html">Blog</a></li>
+                <li><a href="/HTML/MyBooks/MyBooks.html">My Books</a></li>
             </ul>
       
             <div class="icon">
@@ -41,96 +51,148 @@
                 </div>
             </div>
         </nav>
+        
     </header>
-
     <!-- Account Information Section -->
-    <section class="account-info">
-        <div class="left-box">
-            <div class="profile">
-                <img src="/IMAGES/Andrea-Bartz.jpeg" alt="Profile Picture">
-                <span> Carla!</span>
+    <main>
+        <section class="account-info">
+            <div class="left-box">
+                <div class="profile">
+                    <img src="/IMAGES/Profile.jpg" alt="Profile Picture">
+                    <!-- <span class="Welcome">Welcome Carla!</span> -->
+                </div>
+                <div>
+                    <ul class="user-info">
+                        <li>Name: Carla Clarkson</li>
+                        <li>Age: 17</li>
+                        <li>Gender: Female</li>
+                        <li>Reading Preference: <br> Thriller, Fantasy</li>
+                    </ul>
+                </div>
+
+                <div class="edit-button">
+                    <a href="#"><button style="cursor: pointer">Edit Information</button></a>
+                </div>
             </div>
+        </section>
+
+        <section class="reading-list">
             <div>
-                <ul class="user-info">
-                    <li>Name: Carla Clarkson</li>
-                    <li>Age: 17</li>
-                    <li>Gender: Female</li>
-                    <li>Reading Preference: <br> Thriller, Fantasy</li>
+                <h3>Continue Reading</h3>
+                <ul class="continue-reading">
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Nonfiction/I-Can't-Save-You-BookCover.jpeg" alt="I Can't Save You book cover">
+                    <p class="book-title">I Can't Save You</p>
+                    <p class="author-genre">by Anthony Chin-Quee</p></a></li>
+
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/Godkiller-BookCover.jpeg" alt="Godkiller book cover">
+                    <p class="book-title">Godkiller</p>
+                    <p class="author-genre">by Hannah Karner</p></a></li>
+
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/Their-Vicious-Games-BookCover.jpeg" alt="Their Vicious Game book cover">
+                    <p class="book-title">Their Vicious Game</p>
+                    <p class="author-genre">by Joelle Wellington</p></a></li>
+
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/The-Spare-Room-BookCover.jpeg" alt="The Spare Room book cover">
+                    <p class="book-title">The Spare Room</p>
+                    <p class="author-genre">by Andrea Bartz</p></a></li>
+
+                </ul>
+                <!-- <hr> -->
+            </div>
+
+            <div>
+                <h3>Wish To Read</h3>
+                <ul class="wish-to-read">
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/Iron-Flame-BookCover.jpeg" alt="Iron Flame book cover">
+                    <p class="book-title">Iron Flame</p>
+                    <p class="author-genre">by Rebecca Yarros</p></a></li>
+
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/Good-Bad-Girl-BookCover.jpeg" alt="Good Bad Girl book cover">
+                    <p class="book-title">Good Bad Girl</p>
+                    <p class="author-genre">by Alice Feeney</p></a></li>
+
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/The-Deep-Sky-BookCover.jpg" alt="The Deep Sky book cover">
+                    <p class="book-title">The Deep Sky</p>
+                    <p class="author-genre">by Yumi Kitasei</p></a></li>
+
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Nonfiction/Origin-of-Time-BookCover.jpeg" alt="On The Origin Of Time book cover">
+                    <p class="book-title">On The Origin Of Time</p>
+                    <p class="author-genre">by Thomas Hertog</p></a></li>
+                </ul>
+                <!-- <hr> -->
+            </div>
+
+            <div>
+                <h3>Finished Reading</h3>
+                <ul class="finished-reading">
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/Antimatter-Blues-BookCover.jpeg" alt="Antimatter Blues book cover">
+                    <p class="book-title">Antimatter Blues</p>
+                    <p class="author-genre">by Edward Ashton</p></a></li>
+                    
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/The-Trap-BookCover.jpeg" alt="The Trap book cover">
+                    <p class="book-title">The Trap</p>
+                    <p class="author-genre">by Catherine Ryan Howard</p></a></li>
+                
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Thriller/The-New-Mother-BookCover.jpeg" alt="The New Mother book cover">
+                    <p class="book-title">The New Mother</p>
+                    <p class="author-genre">by Nora Murphy</p></a></li>
+
+                    <li><a href="/HTML/Browse/ClickBook.html"><img class="book-img" src="/IMAGES/Fantasy/The-Water-Outlaws-BookCover.jpeg" alt="The Water Outlaws book cover">
+                    <p class="book-title">The Water Outlaws</p>
+                    <p class="author-genre">by S.L.Huang</p></a></li>
                 </ul>
             </div>
+        </section>
+    </main>
 
-            <div class="edit-button">
-                <a href="#"><button style="cursor: pointer">Edit Information</button></a>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">About The Rkhive</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/HTML/Home/Home.html">Home</a></li>
+                        <li><a href="/HTML/Browse/Browse.html">Browse</a></li>
+                        <li><a href="/HTML/Blog/Blog.html">Blog</a></li>
+                        <li><a href="/HTML/MyBooks/MyBooks.html">My Books</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy; The Rkhive 2023. All Rights Reserved.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
-
-    <section class="reading-list">
-        <div>
-            <h3>Continue Reading</h3>
-            <ul class="continue-reading">
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Nonfiction/I-Can't-Save-You-BookCover.jpeg" alt="I Can't Save You book cover">
-                <p class="book-title">I Can't Save You</p>
-                <p class="author-genre">by Anthony Chin-Quee</p></a></li>
-
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Fantasy/Godkiller-BookCover.jpeg" alt="Godkiller book cover">
-                <p class="book-title">Godkiller</p>
-                <p class="author-genre">by Hannah Karner</p></a></li>
-
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Thriller/Their-Vicious-Games-BookCover.jpeg" alt="Their Vicious Game book cover">
-                <p class="book-title">Their Vicious Game</p>
-                <p class="author-genre">by Joelle Wellington</p></a></li>
-
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Thriller/The-Spare-Room-BookCover.jpeg" alt="The Spare Room book cover">
-                <p class="book-title">The Spare Room</p>
-                <p class="author-genre">by Andrea Bartz</p></a></li>
-
-            </ul>
-            <!-- <hr> -->
-        </div>
-
-        <div>
-            <h3>Wish To Read</h3>
-            <ul class="wish-to-read">
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Fantasy/Iron-Flame-BookCover.jpeg" alt="Iron Flame book cover">
-                <p class="book-title">Iron Flame</p>
-                <p class="author-genre">by Rebecca Yarros</p></a></li>
-
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Thriller/Good-Bad-Girl-BookCover.jpeg" alt="Good Bad Girl book cover">
-                <p class="book-title">Good Bad Girl</p>
-                <p class="author-genre">by Alice Feeney</p></a></li>
-
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Fantasy/The-Deep-Sky-BookCover.jpg" alt="The Deep Sky book cover">
-                <p class="book-title">The Deep Sky</p>
-                <p class="author-genre">by Yumi Kitasei</p></a></li>
-
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Nonfiction/Origin-of-Time-BookCover.jpeg" alt="On The Origin Of Time book cover">
-                <p class="book-title">On The Origin Of Time</p>
-                <p class="author-genre">by Thomas Hertog</p></a></li>
-            </ul>
-            <!-- <hr> -->
-        </div>
-
-        <div>
-            <h3>Finished Reading</h3>
-            <ul class="finished-reading">
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Fantasy/Antimatter-Blues-BookCover.jpeg" alt="Antimatter Blues book cover">
-                <p class="book-title">Antimatter Blues</p>
-                <p class="author-genre">by Edward Ashton</p></a></li>
-                
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Thriller/The-Trap-BookCover.jpeg" alt="The Trap book cover">
-                <p class="book-title">The Trap</p>
-                <p class="author-genre">by Catherine Ryan Howard</p></a></li>
-            
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Thriller/The-New-Mother-BookCover.jpeg" alt="The New Mother book cover">
-                <p class="book-title">The New Mother</p>
-                <p class="author-genre">by Nora Murphy</p></a></li>
-
-                <li><a href="#bookdisplay"><img class="book-img" src="/IMAGES/Fantasy/The-Water-Outlaws-BookCover.jpeg" alt="The Water Outlaws book cover">
-                <p class="book-title">The Water Outlaws</p>
-                <p class="author-genre">by S.L.Huang</p></a></li>
-            </ul>
-        </div>
-    </section>
+   </footer>
 </body>
 </html>

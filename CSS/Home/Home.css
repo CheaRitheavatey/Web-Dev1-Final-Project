@@ -1,4 +1,4 @@
-/* Import fonts: Poppins and Raleway  */
+/* Import fonts: Poppins, Playfair Display, and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
@@ -61,6 +61,43 @@ nav li a {
 }
   
 nav li a:hover { color: #b175ff; }
+
+
+
+/* ------------------------------------- */
+        /* Dropdown Button */
+/* ------------------------------------- */
+button a { font-size: 1.2em; }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 0.85em;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #4c2fa0;}
 
 
 
