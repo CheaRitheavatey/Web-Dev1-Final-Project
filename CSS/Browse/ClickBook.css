@@ -159,7 +159,7 @@ svg { fill: white; }
 /* ------------------------------------- */
 main {
     display: flex;
-    margin-top: 5%;
+    margin-top: 2%;
     justify-content: center;
     grid-gap: 9em;
 }
@@ -181,24 +181,21 @@ img {
     box-shadow: 2px 3px 4px #666;
 }
 
-img:hover {
-    scale: 1.075;
-    background-color: black;
-    box-shadow: 8px 8px 8px rgba(0,0,0,0.2);
-}
-
 .bottomleft {
-    /* border: 2px solid black; */
-    margin-top: 50px;
+    margin-top: 40px;
     box-sizing: content-box;
     text-align: center;
 }
 
+.bottomleft ul li h2 { 
+    color: #333;
+    font-size: 1.8em;
+}
+
 .bottomleft li {
-    /* align-items: center; */
     color: #666;
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     list-style-type: none;
     line-height: 1.5;
     text-align: justify;
@@ -206,35 +203,32 @@ img:hover {
     margin-left: 8%;
 }
 
+.button button { margin-left: 8%; }
+
 button {
-    width: 150px;
-    height: 40px;
-    margin: 30px; 
-    font-size: medium;
-    border: 1px solid #b175ff;
+    width: 170px;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: large;
+    border: 1px #b175ff;
     color: white;
     font-family: Raleway;
     background-color: #b175ff;
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
-button:hover {
-    background-color: #4c2fa0;
-}
-audio {
-    margin-left: 8%;
- }
+.button .wishlist-button { margin-left: 10px; }
+
+audio { margin-left: 15%; }
 
 
 /* panel right */
 .rightpanel {
     float: right;
-    /* border: 2px solid black; */
     box-sizing: border-box;
-    margin-right: 8%;
+    margin-right: 160px;
 }
 
 /* line */
@@ -243,28 +237,33 @@ audio {
     background-color: grey;
     height: 800px; /* Adjust the height to match the panels' height */
     position: absolute;
-    margin-right: 27%;
+    margin-right: 16%;
     /* Adjust the left position to match the width of the left panel and add some space */
   }
 
   /* back button */
-.back a{
+.back a { 
     text-decoration: none;
-    /* margin-left: 8%; */
-    /* line-height: 2; */
-    /* border: 2px;  */
+    font-size: medium;
 }
 
-.back {
+.back button {
     margin-top: 8%;
-    margin-left: 8%;
-
-    /* margin-bottom: 1%; */
-    /* height: 20px; */
-    font-family: 'Raleway';
-    border: 1px #333;
-    background-color: white;
+    margin-left: 20px;
+    font-family: Raleway;
+    background-color: transparent;
+    color: #333;
+    font-size: medium;
+    height: 40px;
+    width: 100px;
 }
+
+.back button:hover { 
+    background-color: #f1f1f1;
+    border-radius: 3px;
+}
+
+
 
 /* ------------------------------------- */
         /*** Footer Section ***/
