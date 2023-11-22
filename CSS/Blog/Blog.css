@@ -163,8 +163,9 @@ svg { fill: white; }
 main {
     display: flex;
     flex-direction: column;
-    margin-left: 165px;
-    margin-right: 165px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
     margin-bottom: 5%;
     margin-top: 5%;
 }
@@ -182,7 +183,7 @@ main {
   display: flex;
   flex-direction: column;
   flex:5;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .author-profile {
@@ -204,9 +205,9 @@ main {
 /* The Title and Content of the Blog */
 .blog-content h2 {
   font-family: serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
   color:#333;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -232,7 +233,7 @@ main {
 .blog-content button {
     width: 150px;
     height: 40px;
-    margin: 30px; 
+    margin: 20px; 
     font-size: medium;
     margin-left: 0;
     border: 1px solid #b175ff;
@@ -250,7 +251,7 @@ main {
 }
 
 .blog-image img {
-  height: 250px;
+  height: 270px;
   width: 370px;
 }
 
