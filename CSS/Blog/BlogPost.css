@@ -174,7 +174,7 @@ main h1 {
     color:#333;
     font-family: serif;
     font-size: 2.5em;
-    margin-top: 15%;
+    margin-top: 0;
     margin-bottom: 0;
     text-align: left; 
     line-height: 1.5;
@@ -206,6 +206,42 @@ p {
     margin-top: 10px;
 }
 
+
+/* Back Button */
+.back a { 
+    text-decoration: none;
+    font-size: medium;
+}
+
+.back button {
+    margin-top: 7%;
+    margin-left: 20px;
+    font-family: Raleway;
+    background-color: transparent;
+    color: #333;
+    font-size: medium;
+    height: 40px;
+    width: 100px;
+}
+
+.back button:hover { 
+    background-color: #f1f1f1;
+    border-radius: 3px;
+}
+
+button {
+    width: 170px;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: large;
+    border: 1px #b175ff;
+    color: white;
+    font-family: Raleway;
+    background-color: #b175ff;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* ------------------------------------- */
@@ -268,7 +304,6 @@ ul {
 .footer-col ul li a {
 	font-size: 0.9em;
     font-family: Poppins;
-	color: white;
 	text-decoration: none;
 	font-weight: 300;
 	color: #bbbbbb;
@@ -299,7 +334,7 @@ ul {
 	background-color: white;
 }
 
-.copyright { 
+footer .copyright p { 
     color: white;
     font-family: Raleway;
     font-size: 0.9em;

@@ -221,6 +221,8 @@ button {
 
 .button .wishlist-button { margin-left: 10px; }
 
+.allleft button:hover { background-color: #4c2fa0; }
+
 audio { margin-left: 15%; }
 
 
@@ -365,3 +367,15 @@ ul {
 }
 
 /*** Responsive Footer ***/
+@media(max-width: 767px) {
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  
+  @media(max-width: 574px) {
+    .footer-col{
+      width: 100%;
+  }
+}
