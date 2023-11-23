@@ -161,6 +161,8 @@ svg { fill: white; }
 /* ------------------------------------- */
             /* Reading List */
 /* ------------------------------------- */
+#genre1 { margin-top: 10%; }
+
 .reading-list {
     flex: 1;
     margin-top: 80px;
