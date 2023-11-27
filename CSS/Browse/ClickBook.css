@@ -379,3 +379,11 @@ ul {
       width: 100%;
   }
 }
+
+/* mobile style */
+body {font-size: 16px;}
+
+/* tablet style */
+@media (min-width: 768px) {
+    body { font-size: 18px;}
+}

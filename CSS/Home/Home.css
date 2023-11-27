@@ -562,3 +562,85 @@ ul {
     width: 100%;
 }
 }
+
+/* Import fonts: Poppins, Playfair Display, and Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .hero-section-bookcover {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-section-content {
+        margin-top: 10%;
+    }
+
+    .hero-description {
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .reader-reviews,
+    .author-spotlight-content {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    
+    .author-pic img {
+        width: 100%;
+        height: auto;
+    }
+
+
+@media screen and (max-width: 430px) { 
+
+    .hero-section {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .hero-section-bookcover {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-section-content {
+        margin-top: 10%;
+    }
+
+    .hero-description {
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .reader-reviews,
+    .author-spotlight-content {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+
+    .author-pic img {
+        width: 100%;
+        height: auto;
+    }
+}
+}
