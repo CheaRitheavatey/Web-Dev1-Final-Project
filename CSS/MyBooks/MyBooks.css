@@ -286,6 +286,59 @@ a { text-decoration: none; }
     font-size: 0.75em;
 }
 
+/* Mobile Main Content */
+@media screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .account-info{
+        margin-top: 15%;
+    }
+    .account-info,
+    .reading-list {
+        flex: 1;
+        margin-right: 0;
+    }
+}
+
+
+/* Tablet Main Content */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .user-info li {
+        font-size: 0.9em;
+    }
+
+    .edit-button button {
+        width: 130px;
+        height: 30px;
+        font-size: small;
+    }
+
+    .book-img {
+        width: 140px;
+        height: 200px;
+    }
+
+    .reading-list h3 {
+        font-size: 1.5em;
+    }
+
+    .book-title {
+        font-size: 0.8em;
+    }
+
+    .author-genre {
+        font-size: 0.65em;
+    }
+}
+
 
 /* ------------------------------------- */
         /*** Footer Section ***/
