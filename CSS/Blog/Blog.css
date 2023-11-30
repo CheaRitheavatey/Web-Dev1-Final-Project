@@ -267,18 +267,19 @@ main {
   .blog-post {
       flex-direction: column;
       align-items: center;
-      margin-left: 0;
-      
-      
+      justify-items: center;
+      margin-left: 0;  
   }
 
-  .blog-image img {
-      
-    height: auto;
-    width: 80%;
+  .blog-image {
+    /* height: 250px; */
+    /* width: 80%; */
     margin-left: 0;
-    /* align-items: center;
-    justify-content: center; */
+    margin: 0 auto;
+  }
+
+  .blog-image img{
+    height: 250px;
   }
 
   .blog-info {
