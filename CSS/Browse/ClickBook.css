@@ -387,3 +387,99 @@ body {font-size: 16px;}
 @media (min-width: 768px) {
     body { font-size: 18px;}
 }
+
+/* responsive nav */
+@media screen and (max-width: 1024px) {
+    .navigation-menu .icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex: 0 0 30%;
+        margin-left: 10px;
+    }
+
+    .logo a p {
+        font-size: 0.6em;
+        display: inline-block;
+        margin-right: 15x;
+    }
+
+    .search-box, .profile-bell-icons {
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+
+    .search-box {
+        width: calc(70% - 5px); 
+        margin-right: 5px; 
+    }
+
+    .search-icon {
+        flex: 0 0 20%;
+    }
+
+    .nav-items {
+        flex: 1;
+        text-align: right;
+        font-size: 0.85em;
+        margin-top: 5px;
+        margin-right: 25px;
+    }
+
+    .icon {
+        margin-bottom: 15px;
+    }
+
+    .notification-icon, .profile-icon {
+        width: 28px; 
+        height: 28px; 
+    }
+
+    .notification-icon {
+        margin-right: 10px;
+    }
+
+    .profile-bell-icons {
+        flex: 0 0 calc(20% - 10px); 
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px; 
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .hero-section-bookcover {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-section-content {
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .hero-description {
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .reader-reviews,
+    .author-spotlight-content {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .author-pic img {
+        width: 100%;
+        height: auto;
+    }
+}

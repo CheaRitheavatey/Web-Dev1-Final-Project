@@ -69,7 +69,7 @@ nav li a:hover { color: #b175ff; }
 /* ------------------------------------- */
         /* Dropdown Button */
 /* ------------------------------------- */
-button a { font-size: 1.2em; }
+
   
 .dropdown {
     position: relative;
@@ -551,6 +551,8 @@ ul {
     margin-top: 20px;
 }
 
+
+
 /*** Responsive Footer ***/
 @media(max-width: 767px) {
   .footer-col{
@@ -565,21 +567,72 @@ ul {
 }
 }
 
-/* Import fonts: Poppins, Playfair Display, and Raleway */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
 
 
-/* Responsive Styles */
-
+/* Responsive Header and Body */
 @media screen and (max-width: 1024px) {
+    .navigation-menu .icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex: 0 0 30%;
+        margin-left: 10px;
+    }
+
+    .logo a p {
+        font-size: 0.6em;
+        display: inline-block;
+        margin-right: 15x;
+    }
+
+    .search-box, .profile-bell-icons {
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+
+    .search-box {
+        width: calc(70% - 5px); 
+        margin-right: 5px; 
+    }
+
+    .search-icon {
+        flex: 0 0 20%;
+    }
+
+    .nav-items {
+        flex: 1;
+        text-align: right;
+        font-size: 0.85em;
+        margin-top: 5px;
+        margin-right: 25px;
+    }
+
+    .icon {
+        margin-bottom: 15px;
+    }
+
+    .notification-icon, .profile-icon {
+        width: 28px; 
+        height: 28px; 
+    }
+
+    .notification-icon {
+        margin-right: 10px;
+    }
+
+    .profile-bell-icons {
+        flex: 0 0 calc(20% - 10px); 
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px; 
+    }
+
     .hero-section {
         grid-template-columns: 1fr; /* Change to a single column layout */
     }
@@ -592,6 +645,7 @@ body {
 
     .hero-section-content {
         margin-top: 10%;
+        margin-left: 5%;
     }
 
     .hero-description {
@@ -605,11 +659,11 @@ body {
         margin-left: 20px;
     }
 
-    
     .author-pic img {
         width: 100%;
         height: auto;
     }
+}
 
 
 @media screen and (max-width: 430px) { 
@@ -639,10 +693,8 @@ body {
         margin-left: 20px;
     }
 
-
     .author-pic img {
         width: 100%;
         height: auto;
     }
-}
 }
