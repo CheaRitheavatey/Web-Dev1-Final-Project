@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
+@import url('https://unpkg.com/boxicons@latest/css/boxicons.min.css');
 
 body {
     margin: 0;
@@ -241,6 +241,38 @@ button {
     background-color: #b175ff;
     align-items: center;
     justify-content: center;
+}
+
+/* Comment Section  */
+.comment-section{
+    margin-top: 5%;
+    /* border-style: groove; */
+}
+
+.comment-box{
+    font-family: Poppins;
+    margin-top: 20px;
+    /* border-style: dashed; */
+
+}
+
+#comment-input{
+    font-family: Poppins;
+    resize:none;
+    font-size: 1em;
+    /* margin-left: 10px; */
+    width: 100%;
+    height: auto;
+}
+
+.submit-button{
+    font-family: Raleway;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.submit-button button:hover {
+    background-color: #4c2fa0;
 }
 
 
