@@ -355,7 +355,7 @@ background-color: #333;
 }
 
 .footer-col h4 {
-font-size: 1em;
+font-size: 1.2em;
   font-family: Raleway;
   color: white;
 margin-bottom: 35px;
@@ -379,7 +379,7 @@ margin-bottom: 10px;
 }
 
 .footer-col ul li a {
-font-size: 0.9em;
+font-size: 1em;
   font-family: Poppins;
 color: white;
 text-decoration: none;
@@ -415,7 +415,7 @@ background-color: white;
 .copyright { 
   color: white;
   font-family: Raleway;
-  font-size: 0.9em;
+  font-size: 1em;
   margin-top: 20px;
 }
 
