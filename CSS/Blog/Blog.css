@@ -153,6 +153,74 @@ svg:hover { fill: #b175ff; }
 svg { fill: white; }
 
 .search-icon { fill: #333; }
+
+/* responsiveness for nav header 430px */
+
+@media screen and (max-width: 430px) { 
+  body {
+      margin: 0;
+      padding: 0;
+  }
+  .navigation-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .search-box, 
+  .search-icon {
+      display: none;
+  }
+
+  .logo {
+      flex: 0 0 10%;
+  }
+
+  .logo a p {
+      font-size: 0.6em;
+      display: inline-block;
+      margin-left: 0;
+      padding-left: 0;
+  }
+
+  .logo, 
+  .nav-items, 
+  .profile-bell-icons {
+      flex: 1;
+      margin: 5px 0;
+  }
+
+  .nav-items {
+      flex: 1;
+      text-align: center;
+      font-size: 0.7em;
+      margin-bottom: 18px;
+      margin-right: 25px;
+      margin-left: 15px;
+  }
+
+  .profile-bell-icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+  .profile-icon, 
+  .notification-icon {
+      width: 20px;
+      height: 20px;
+  }
+
+  .notification-icon {
+      margin-left: 5px;
+  }
+
+  .nav-items li {
+      margin-right: 5px;
+  }
+}
 /* nav end  */
 
 
