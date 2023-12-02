@@ -1,5 +1,5 @@
 # Web Development 1 Final Project
-This "Rkhive" project is part of our course assignment in which we created a
+This **Rkhive** project is part of our course assignment in which we created a
 website as a digital library platform for people to explore, discover, and read books
 of various genres such as fantasy, thriller, non-fiction, and manga. Moreover, there's also
 blog content related to topics such as book reviews, author biography, etc. 
@@ -11,12 +11,12 @@ blog content related to topics such as book reviews, author biography, etc.
 * sopheavatey (Heang Sophea Vatey) - Blog & My Books
 
 ## Purpose
-The **Rkhive** aims to foster a love for reading through genre-based browsing, insightful reviews, 
+**The Rkhive** aims to foster a love for reading through genre-based browsing, insightful reviews, 
 author spotlights, and convenient book tracking for effective reading management.
 
 
 ## Objective
-The Rkhive is dedicated to provide users with a free and accessible online library platform 
+**The Rkhive** is dedicated to provide users with a free and accessible online library platform 
 that offers a range of books across various genres, allowing them to discover and enjoy 
 literature effortlessly.
 
