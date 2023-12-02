@@ -243,37 +243,40 @@ button {
     justify-content: center;
 }
 
+
 /* Comment Section  */
-.comment-section{
-    margin-top: 5%;
-    /* border-style: groove; */
+.comment-section {
+    margin-top: 8%;
+    margin-bottom: 5%;
 }
 
-.comment-box{
+.comment-box {
     font-family: Poppins;
     margin-top: 20px;
-    /* border-style: dashed; */
-
 }
 
-#comment-input{
+#comment-input {
     font-family: Poppins;
     resize:none;
     font-size: 1em;
-    /* margin-left: 10px; */
     width: 100%;
-    height: auto;
+    height: 110px;
+    margin-top: 0;
+    padding: 10px;
 }
 
-.submit-button{
+.comment-box input[type="submit"] {
+    width: 130px;
+    height: 40px;
+    font-size: medium;
+    background-color: #b175ff;
     font-family: Raleway;
-    margin-top: 20px;
-    text-align: right;
+    margin-top: 10px;
+    border: 1px solid #b175ff;
+    color: white;
 }
 
-.submit-button button:hover {
-    background-color: #4c2fa0;
-}
+.comment-box input[type="submit"]:hover { background-color: #4c2fa0; }
 
 
 /* ------------------------------------- */

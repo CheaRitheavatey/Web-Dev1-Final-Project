@@ -422,6 +422,7 @@ a { text-decoration: none; }
     color: #666;
     font-family: Raleway;
     border: 1px solid #333;
+    padding: 10px;
 }
 
 .newsletter-section h2 {
