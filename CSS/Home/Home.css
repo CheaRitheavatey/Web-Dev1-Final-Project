@@ -166,7 +166,10 @@ svg { fill: white; }
     width: 290px; 
     height: 420px;  
     box-shadow: 3px 5px 10px #666;
+    transition: 0.3s;
 }
+
+.hero-section-bookcover img:hover { scale: 1.075; }
 
 .hero-section { 
     display: grid; 
@@ -571,8 +574,9 @@ ul {
 
 /* ------------------------------------- */
     /* Responsive Header and Body */
-        /* 1024px for Laptop */
 /* ------------------------------------- */
+
+/* 1024px for Laptop */
 @media screen and (max-width: 1024px) {
     .navigation-menu .icon {
         display: flex;
@@ -668,7 +672,7 @@ ul {
 }
 
 
-    /* 430px for Mobile */
+/* 430px for Mobile */
 @media screen and (max-width: 430px) { 
     body {
         margin: 0;

@@ -163,7 +163,7 @@ svg { fill: white; }
             /* Blog Content */
 /* ------------------------------------- */
 main {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 10px;
     text-align: justify;
@@ -260,7 +260,7 @@ button {
     resize:none;
     font-size: 1em;
     width: 100%;
-    height: 110px;
+    height: 90px;
     margin-top: 0;
     padding: 10px;
 }
