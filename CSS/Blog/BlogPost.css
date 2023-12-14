@@ -66,9 +66,6 @@ nav li a {
   
 nav li a:hover { color: #b175ff; }
 
-
-
-
 /* ------------------------------------- */
         /* Dropdown Button */
 /* ------------------------------------- */
@@ -155,6 +152,139 @@ svg { fill: white; }
 
 .search-icon { fill: #333; }
 
+/* responsiveness for nav header 1024px */ 
+
+@media screen and (max-width: 1024px) {
+    .navigation-menu .icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex: 0 0 30%;
+        margin-left: 15px;
+    }
+
+    .logo a p {
+        font-size: 0.6em;
+        display: inline-block;
+    }
+
+    .search-box, .profile-bell-icons {
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+
+    .search-box {
+        width: calc(70% - 5px); 
+        margin-right: 5px; 
+    }
+
+    .search-icon {
+        flex: 0 0 20%;
+    }
+
+    .nav-items {
+        flex: 1;
+        text-align: center;
+        font-size: 0.85em;
+        margin-top: 5px;
+        margin-right: 25px;
+    }
+
+    .icon {
+        margin-bottom: 15px;
+    }
+
+    .notification-icon, .profile-icon {
+        width: 28px; 
+        height: 28px; 
+    }
+
+    .notification-icon {
+        margin-right: 10px;
+    }
+
+    .profile-bell-icons {
+        flex: 0 0 calc(20% - 10px); 
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px; 
+    }
+}
+
+/* responsiveness for nav header 430px */
+
+@media screen and (max-width: 430px) { 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .navigation-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-box, 
+    .search-icon {
+        display: none;
+    }
+
+    .logo {
+        flex: 0 0 10%;
+    }
+
+    .logo a p {
+        font-size: 0.6em;
+        display: inline-block;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .logo, 
+    .nav-items, 
+    .profile-bell-icons {
+        flex: 1;
+        margin: 5px 0;
+    }
+
+    .nav-items {
+        flex: 1;
+        text-align: center;
+        font-size: 0.7em;
+        margin-bottom: 18px;
+        margin-right: 25px;
+        margin-left: 15px;
+    }
+
+    .profile-bell-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .profile-icon, 
+    .notification-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .notification-icon {
+        margin-left: 5px;
+    }
+
+    .nav-items li {
+        margin-right: 5px;
+    }
+}
+
 /* nav end */
 
 
@@ -187,7 +317,11 @@ main h3 {
     margin-bottom: 0;
 }
 
-main img { margin-bottom: 20px; }
+main img { 
+    margin-bottom: 20px;
+    width: 880px; 
+    height: 480px;
+}
 
 .date {
     color: #b175ff;
@@ -278,6 +412,73 @@ button {
 
 .comment-box input[type="submit"]:hover { background-color: #4c2fa0; }
 
+/* Responsive design */
+
+/* Tablets and small screens */
+@media screen and (max-width: 767px) {
+    main {
+        padding: 10px;
+        margin-bottom: 10%;
+    }
+
+    .back button {
+        margin-top: 5%;
+    }
+
+    main img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .comment-section {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Medium screens (1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        padding: 20px;
+    }
+
+    .back button {
+        margin-top: 7%;
+    }
+
+    main img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .comment-section {
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Mobile devices (430px) */
+@media screen and (max-width: 574px) {
+    main {
+        padding: 10px;
+        margin-bottom: 10%;
+    }
+
+    .back button {
+        margin-top: 5%;
+    }
+
+    main img {
+        width: 100%; 
+        height: auto; 
+    }
+
+
+    .comment-section {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
 
 /* ------------------------------------- */
         /*** Footer Section ***/
